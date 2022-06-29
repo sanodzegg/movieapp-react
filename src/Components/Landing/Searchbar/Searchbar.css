@@ -1,0 +1,47 @@
+.searchBarWrapper {
+  width: 550px;
+  margin: 140px auto 30px auto;
+}
+
+.searchBarWrapper * {
+  font-family: 'Catamaran', sans-serif;
+}
+
+.searchBarWrapper p {
+  text-align: center;
+  color: #f1b722;
+  margin-bottom: 20px;
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.searchBarWrapper input {
+  width: 100%;
+  padding: 15px 165px;
+  font-size: 18px;
+  line-height: 28px;
+  border-radius: 40px;
+  outline: unset;
+  border: unset;
+  background: url("../../../assets/icons/search-thick.svg") no-repeat #f5f5f5 center;
+  background-position-x: 90%;
+  background-size: 20px;
+}
+
+.searchBarWrapper ::-webkit-input-placeholder {
+  color: #898989;
+}
+
+.searchBarWrapper :-ms-input-placeholder {
+  color: #898989;
+}
+
+.searchBarWrapper ::-ms-input-placeholder {
+  color: #898989;
+}
+
+.searchBarWrapper ::placeholder {
+  color: #898989;
+}
+/*# sourceMappingURL=Searchbar.css.map */

@@ -1,0 +1,112 @@
+.upcomingWrapper
+    position: relative
+    .upcomingBackground
+        .upcomingIMGCover
+            width: 100%
+            height: 100%
+            position: absolute
+            z-index: 10
+            background: linear-gradient(180deg, rgba(18,26,32,0) 0%, rgba(8,27,39,1) 100%)
+            user-select: none
+        .upcomingIMGWrapper
+            width: 100%
+            height: 900px
+            user-select: none
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                user-select: none
+    .upcomingForeground
+        position: absolute
+        top: 50%
+        left: 5%
+
+        transform: translateY(-50%)
+
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: start
+
+        color: #f5f5f5
+
+        z-index: 20
+        font-family: 'Catamaran', sans-serif
+        padding: 0 20px
+
+        span
+            background-color: #F1B722
+            width: 45px
+            height: 32.5px
+
+            font-size: 22px
+            line-height: 32px
+            font-weight: bold
+
+            text-align: center
+            border-radius: 25px
+
+            margin-bottom: 25px
+        h1
+            font-size: 75px
+            white-space: break-spaces
+            line-height: 65px
+            font-weight: 800
+        p
+            max-width: 510px
+            font-size: 18px
+            line-height: 32px
+            font-weight: 400
+            font-family: 'Roboto', sans-serif
+
+        button
+            margin-top: 35px
+            padding: 14px 25px 11px 25px
+            background-color: transparent
+            border-radius: 4px
+            width: 135px
+            height: 50px
+
+            text-transform: uppercase
+            font-weight: bolder
+            font-size: 13px
+            line-height: 20px
+
+            outline: unset
+            border: 2px solid #f5f5f538
+            color: #f5f5f5
+            cursor: pointer
+
+            transition: all .3s ease-in-out
+
+        button:hover
+            background-color: #fff
+            color: #000000
+
+        .movieInfoWrapper
+            display: flex
+            justify-content: space-between
+            align-items: center
+            gap: 10px
+            margin: 20px 0
+            margin-top: 30px
+            flex-wrap: wrap
+        #ratingStars
+            p
+                display: inline-block !important
+        .genreWrapper, .dateWrapper
+            display: flex
+            align-items: center
+            justify-content: space-between
+            gap: 5px
+            .genreTag
+                width: 20px
+                height: 17px
+        .genreWrapper
+            color: #cad3da
+            text-decoration: underline
+        .dateWrapper
+            .dateTag
+                width: 17px
+                height: 17px

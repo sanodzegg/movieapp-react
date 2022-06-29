@@ -1,0 +1,14 @@
+.discoverView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.discoverView .discoverView-Col {
+  width: 80%;
+}
+
+.discoverView .discoverView-Col.aside {
+  width: 20% !important;
+}
+/*# sourceMappingURL=DiscoverView.css.map */

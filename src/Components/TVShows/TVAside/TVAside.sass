@@ -1,0 +1,161 @@
+.tvAsideWrapper
+    position: sticky
+    top: 0
+    right: 0
+    height: 100vh
+    background-color: #000
+    box-shadow: 0px 0px 50px #000000b0
+    *
+        font-family: 'Catamaran', sans-serif
+    .tvAsideInput
+        display: flex
+        justify-content: space-between
+        background-color: #0C2738
+        input
+            height: 80px
+            width: 80%
+            padding: 40px 40px
+            border: unset
+            outline: unset
+            font-size: 17px
+            font-weight: 400
+            line-height: 28px
+            background-color: #f0f3f5
+        .searchIconWrapper
+            position: relative
+            width: 20%
+            cursor: pointer
+            svg
+                pointer-events: unset
+                width: 27px
+                height: 24px
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+    .tvAsideNavigation
+        p
+            font-size: 21px
+            line-height: 28px
+            color: #8d9eac
+            font-weight: 800
+            margin: 40px 30px 20px 40px
+        ul
+            list-style-type: none
+            li
+                border-top: 1px solid #1d1d1d
+            a
+                text-decoration: unset
+                color: #f5f5f5
+                font-size: 17px
+                line-height: 30px
+                font-weight: 600
+                transition: all .25s ease-in-out
+                padding: 10px 40px
+                display: block
+                &.active
+                    background-color: #f1b722
+                &.active:hover
+                    color: #f5f5f5
+            a:hover
+                color: #F1B722
+    .tvAsideSpotlightWrapper
+        padding-left: 40px
+        p
+            font-size: 21px
+            line-height: 28px
+            color: #8d9eac
+            font-weight: 800
+            margin: 40px 30px 30px 0px
+        .spotlightCardWrapper
+            display: flex
+            position: relative
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            height: 80px
+            min-width: 290px
+            margin-top: 20px
+            max-width: max-content
+            span
+                background-color: #F1B722
+
+                font-weight: bold
+
+                text-align: center
+                border-radius: 25px
+
+                margin-bottom: 25px
+                color: #f5f5f5
+                z-index: 20
+                position: absolute
+                top: 0%
+                transform: translate(-50%, -50%)
+
+                width: 33px
+                height: 27px
+                font-size: 11px
+                line-height: 27px
+                left: 10%
+            .movieCardIMGWrapper
+                overflow: hidden
+                box-shadow: 0 0 10px #00000035
+                border-radius: 5px
+                position: relative
+                cursor: pointer
+
+                max-width: 60px
+                min-width: 60px
+                height: 80px
+                margin-left: unset
+                .loaderWrapper
+                    width: 100%
+                    height: 100%
+                    .loader
+                        width: 1vw
+                        height: 1vh
+                .imgCover
+                    width: 100%
+                    height: 100%
+                    position: absolute
+                    transform: all .3s ease-in-out
+                    background: transparent
+                    z-index: 10
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+            .movieCardIMGWrapper:hover
+                .imgCover
+                    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%)
+            .cardWrapperInfo
+                width: 100%
+                max-width: 255px
+                height: 85px
+
+                margin: 0
+                margin-left: 25px
+                #ratingStars
+                    p
+                        font-size: 15px
+                        display: inline-block !important
+                        margin: 0 !important
+                .cardWrapperTitle
+                    margin-top: 0px
+                    color: #f5f5f5
+                    font-weight: bold
+                    font-size: 20px
+                    line-height: 28px
+                    cursor: pointer
+                .cardWrapperTitle:hover
+                    text-decoration: underline
+                .genreWrapper
+                    display: flex
+                    align-items: center
+                    gap: 3.5px
+                    color: #cad3da
+                    text-decoration: underline
+                    cursor: pointer
+                    .genreTag
+                        width: 20px
+                        height: 17px

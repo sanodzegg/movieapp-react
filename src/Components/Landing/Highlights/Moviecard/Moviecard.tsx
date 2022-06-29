@@ -2,49 +2,43 @@ import React, {useState, useEffect} from "react";
 
 import { ReactComponent as GenreIcon } from "../../../../assets/icons/genretag.svg";
 import "./Moviecard.css";
-import { getGenres } from '../../../../getData';
+import useGenres from '../../../../hooks/useGenres';
+import { useNavigate } from 'react-router-dom';
 
 interface dataTypes {
   imagePath: string,
   vote: number,
   title: string,
-  genres: object[]
+  genres: any[],
+  id:number
 }
 
+export default function Moviecard({ imagePath, vote, title, genres, id }:dataTypes) {
 
-export default function Moviecard({imagePath, vote, title, genres}:dataTypes) {
+  const genresStr = useGenres(genres);
 
-  const [genreIDS, setGenreIDS] = useState<any>([]);
-  const [genresStr, setGenresStr] = useState<any>([]);
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    if(genreIDS.genres !== undefined) {
-        genreIDS.genres.map((key:any, i:number) => {
-           return genres.filter((e:any) => genres.includes(key.id) ? setGenresStr(key.name) : null)
-        });
-    }
-  }, [genreIDS, genres]);
-
-  const setGenreData = async () => {
-      setGenreIDS(await getGenres());
+  const handleReadMore = (movieid:number) => {
+    navigate(`/movie/detailed/${movieid}`);
   }
 
-  useEffect(() => {
-    setGenreData();
-  }, []);
-
-  return <div className="movieCardWrapper">
-    <div className="movieCardIMGWrapper">
-      <img src={`http://image.tmdb.org/t/p/w342${imagePath}`} alt="backdrop image"/>
-    </div>
-    <div className="cardWrapperInfo">
-      <div id="ratingStars">
-        {Array<number>(Math.floor(vote/2)).fill(0).map((e,i) => {
-            return <p key={i}>⭐</p>
-        })}
+  return (
+    <div className="movieCardWrapper">
+      <span>{vote > 0 ? vote : "?"}</span>
+      <div className="movieCardIMGWrapper" onClick={() => handleReadMore(id)}>
+        <div className="imgCover"></div>
+        <img src={`http://image.tmdb.org/t/p/w342${imagePath}`} alt="backdrop image"/>
       </div>
-      <h3 className="cardWrapperTitle">{title.length >= 21 ? `${title.slice(0, 18)}...` : title}</h3>
-      <div className="genreWrapper"><GenreIcon className="genreTag"/> {genresStr}</div>
+      <div className="cardWrapperInfo">
+        <div id="ratingStars">
+          {Array<number>(Math.floor(vote/2)).fill(0).map((e,i) => {
+              return <p key={i}>⭐</p>
+          })}
+        </div>
+        <h3 className="cardWrapperTitle" onClick={() => handleReadMore(id)}>{title.length >= 21 ? `${title.slice(0, 21)}...` : title}</h3>
+        <div className="genreWrapper"><GenreIcon className="genreTag"/> {genresStr[0]}</div>
+      </div>
     </div>
-  </div>;
+  );
 }

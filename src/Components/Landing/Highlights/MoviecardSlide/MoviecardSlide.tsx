@@ -9,10 +9,10 @@ interface dataTypes {
 
 interface objectTypes {
     genre_ids: object[],
-    original_title: string,
     poster_path: string,
     title: string,
     vote_average: number,
+    id: number,
 }
 
 export default function MoviecardSlide({data}:dataTypes) {
@@ -25,8 +25,8 @@ export default function MoviecardSlide({data}:dataTypes) {
     }, [])
 
   return <div className="slideWrapper">
-    {data.map(e => {
-        return <Moviecard imagePath={e.poster_path} vote={e.vote_average} title={e.original_title} genres={e.genre_ids} />
+    {data.map((e, i) => {
+        return <Moviecard id={e.id} key={i} imagePath={e.poster_path} vote={e.vote_average} title={e.title} genres={e.genre_ids} />
     })}
   </div>;
 }

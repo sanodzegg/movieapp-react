@@ -1,0 +1,112 @@
+.tvShowCardWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  max-height: 485px;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.tvShowCardWrapper span {
+  background-color: #F1B722;
+  width: 40px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  color: #f5f5f5;
+  z-index: 20;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.tvShowCardWrapper .movieCardIMGWrapper {
+  width: 255px;
+  height: 365px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px #00000035;
+          box-shadow: 0 0 10px #00000035;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.tvShowCardWrapper .movieCardIMGWrapper .imgCover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform: all .3s ease-in-out;
+          transform: all .3s ease-in-out;
+  background: transparent;
+  z-index: 10;
+}
+
+.tvShowCardWrapper .movieCardIMGWrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tvShowCardWrapper .movieCardIMGWrapper:hover .imgCover {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.tvShowCardWrapper .cardWrapperInfo {
+  margin-top: 35px;
+  width: 100%;
+  max-width: 255px;
+  height: 85px;
+}
+
+.tvShowCardWrapper .cardWrapperInfo #ratingStars p {
+  display: inline-block !important;
+}
+
+.tvShowCardWrapper .cardWrapperInfo .cardWrapperTitle {
+  margin-top: 5px;
+  color: #f5f5f5;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.tvShowCardWrapper .cardWrapperInfo .cardWrapperTitle:hover {
+  text-decoration: underline;
+}
+
+.tvShowCardWrapper .cardWrapperInfo .genreWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.5px;
+  color: #cad3da;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tvShowCardWrapper .cardWrapperInfo .genreWrapper .genreTag {
+  width: 20px;
+  height: 17px;
+}
+/*# sourceMappingURL=TVShowCard.css.map */

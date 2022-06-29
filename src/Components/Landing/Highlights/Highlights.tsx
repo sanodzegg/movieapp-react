@@ -1,7 +1,7 @@
 import React, {useState, useRef, useEffect} from "react";
 
 import "./Highlights.css"
-import { getHighlights } from '../../../getData';
+import { pushHighlights } from '../../../getData';
 import MoviecardSlide from "./MoviecardSlide/MoviecardSlide";
 
 export default function Highlights() {
@@ -11,9 +11,7 @@ export default function Highlights() {
   const buttonsRef = useRef<HTMLDivElement>(null);
   const train = useRef<HTMLDivElement>(null);
 
-  let buttonClickedIndex = 0;
   const handleClick = (e:any, index: number) => {
-    buttonClickedIndex = index;
     const refChildren = buttonsRef.current!.childNodes as any as Array<HTMLElement>;
     refChildren.forEach((e) => {
       e.classList.remove("active");
@@ -25,7 +23,7 @@ export default function Highlights() {
   }
 
   const setHLData = async () => {
-    setHighlightData(await getHighlights());
+    setHighlightData(await pushHighlights());
   }
 
   useEffect(() => {
@@ -49,8 +47,8 @@ export default function Highlights() {
       </div>
       <div className="moviecardsParentWrapper">
         <div className="moviecardsParent" ref={train}>
-          {Object.values(highlightData).map(el => {
-            return <MoviecardSlide data={el}/>
+          {Object.values(highlightData).map((el, i) => {
+            return <MoviecardSlide key={i} data={el}/>
           })}
         </div>
       </div>

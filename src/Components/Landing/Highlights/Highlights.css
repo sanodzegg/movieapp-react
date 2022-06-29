@@ -22,7 +22,7 @@
           justify-content: space-between;
   width: 1075px;
   margin: 0 auto;
-  padding: 100px 0 55px 0;
+  padding-top: 100px;
 }
 
 .highlightsWrapper .highlightsHeader h1 {
@@ -73,6 +73,7 @@
   margin: 0 auto;
   overflow: hidden;
   margin-bottom: 130px;
+  padding-top: 65px;
 }
 
 .highlightsWrapper .moviecardsParentWrapper .moviecardsParent {

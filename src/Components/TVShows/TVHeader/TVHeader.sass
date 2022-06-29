@@ -1,0 +1,47 @@
+.tvHeaderWrapper
+    width: 1080px
+    margin: 0 auto
+    text-align: center
+    font-family: 'Catamaran', sans-serif
+    margin-top: 95px
+    position: relative
+    h1
+        font-weight: 900
+        font-size: 100px
+        line-height: 100px
+        color: #f5f5f5
+    p
+        color: #8ea9bd
+        font-size: 24px
+        line-height: 28px
+        font-weight: 300
+        margin-top: 20px
+    .viewAbsolute
+        position: absolute
+        right: 0
+        bottom: 15px
+        .viewWrapper
+            width: 190px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .viewIconWrapper
+                height: 50px
+                width: 50px
+                border-radius: 50%
+                position: relative
+                transition: all .3s ease-in-out
+                cursor: pointer
+                &.active
+                    background-color: #374550
+                svg
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    width: 20px
+                    height: 20px
+                    fill: #f5f5f5
+                    pointer-events: none
+        .viewIconWrapper:hover
+            background-color: #040F16

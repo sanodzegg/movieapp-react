@@ -1,0 +1,223 @@
+.TVLayoutWrapper {
+  width: 1080px;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+.TVLayoutWrapper .paginationBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.TVLayoutWrapper .paginationBtns button {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #f5f5f5;
+  padding: 10px 35px 10px 35px;
+  border-radius: 5px;
+  border: 1px solid #ffffff26;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.TVLayoutWrapper .paginationBtns button:hover {
+  color: #F1B722;
+}
+
+.TVLayoutWrapper .rmBtn {
+  display: none;
+}
+
+.TVLayoutWrapper.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 75px;
+}
+
+.TVLayoutWrapper.grid .tvShowCardWrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  height: unset;
+  width: unset;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.TVLayoutWrapper.grid .tvShowCardWrapper span {
+  width: 40px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 32px;
+  left: 50%;
+}
+
+.TVLayoutWrapper.grid .tvShowCardWrapper .movieCardIMGWrapper {
+  width: 255px;
+  height: 365px;
+  margin-left: unset;
+}
+
+.TVLayoutWrapper.grid .tvShowCardWrapper .movieCardIMGWrapper .loaderWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.TVLayoutWrapper.grid .tvShowCardWrapper .cardWrapperInfo {
+  margin-top: 35px;
+  margin-left: unset;
+}
+
+.TVLayoutWrapper.grid .paginationBtns {
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+.TVLayoutWrapper.thumb {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 45px;
+}
+
+.TVLayoutWrapper.thumb .tvShowCardWrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
+  width: 345px;
+}
+
+.TVLayoutWrapper.thumb .tvShowCardWrapper span {
+  width: 33px;
+  height: 27px;
+  font-size: 11px;
+  line-height: 27px;
+  left: 9.5%;
+}
+
+.TVLayoutWrapper.thumb .tvShowCardWrapper .movieCardIMGWrapper {
+  width: 60px;
+  height: 80px;
+  margin-left: unset;
+}
+
+.TVLayoutWrapper.thumb .tvShowCardWrapper .cardWrapperInfo {
+  margin: 0;
+  margin-left: 25px;
+}
+
+.TVLayoutWrapper.thumb .paginationBtns {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.TVLayoutWrapper.list {
+  width: 755px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 45px;
+}
+
+.TVLayoutWrapper.list .tvShowCardWrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 80px;
+  width: 755px;
+}
+
+.TVLayoutWrapper.list .tvShowCardWrapper span {
+  width: 33px;
+  height: 27px;
+  font-size: 11px;
+  line-height: 27px;
+  left: 4.75%;
+}
+
+.TVLayoutWrapper.list .tvShowCardWrapper .movieCardIMGWrapper {
+  width: 60px;
+  height: 80px;
+  margin-left: 5px;
+}
+
+.TVLayoutWrapper.list .tvShowCardWrapper .cardWrapperInfo {
+  margin: 0;
+  margin-left: 25px;
+}
+
+.TVLayoutWrapper.list .tvShowCardWrapper::before {
+  content: "";
+  position: absolute;
+  top: -33%;
+  left: 1%;
+  width: 750px;
+  height: 1px;
+  background-color: #1E313B;
+}
+
+.TVLayoutWrapper.list .rmBtn {
+  display: block;
+  position: absolute;
+  right: 0;
+  padding: 14px 25px 10px 25px;
+  text-transform: uppercase;
+  color: #f5f5f5;
+  font-size: 13px;
+  line-height: 20px;
+  background-color: #263947;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  outline: unset;
+  border: unset;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.TVLayoutWrapper.list .rmBtn:hover {
+  background-color: #374550;
+}
+/*# sourceMappingURL=TVLayout.css.map */

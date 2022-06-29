@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
-import { getGenres } from '../../../getData';
+import { useNavigate } from "react-router-dom";
 import moment from "moment";
 import "./MovieLatest.css";
 
 import { ReactComponent as GenreIcon } from '../../../assets/icons/genretag.svg';
 import { ReactComponent as DateIcon } from '../../../assets/icons/clock.svg';
+import useGenres from '../../../hooks/useGenres';
 
 interface childTypes {
+    movieid: number,
     idnum: number,
     title: string, 
     overview: string,
@@ -18,11 +20,12 @@ interface childTypes {
     setImgLoaded: any,
 }
 
-export default function MovieLatestChild({ idnum, title, overview, genres, releaseDate, backdrop, vote, imgLoaded, setImgLoaded }:childTypes) {
+export default function MovieLatestChild({ movieid, idnum, title, overview, genres, releaseDate, backdrop, vote, imgLoaded, setImgLoaded }:childTypes) {
 
-    const [genreIDS, setGenreIDS] = useState<any>([]);
-    const [genresStr, setGenresStr] = useState<any>([]);
+    const genresStr = useGenres(genres);
     const imgRef = useRef<HTMLImageElement>(null);
+
+    const navigate = useNavigate(); 
 
     const handleImgLoad = () => {
         setImgLoaded(true);
@@ -30,29 +33,16 @@ export default function MovieLatestChild({ idnum, title, overview, genres, relea
 
     const handleImgError = () => {
         setImgLoaded(false);
-        
         imgRef.current!.style.display = "none";
     }
 
-    useEffect(() => {
-        setGenreData();
-    }, []);
-
-    useEffect(() => {
-        if(genreIDS.genres !== undefined) {
-            genreIDS.genres.map((key:any, i:number) => {
-               return genres.filter((e:any) => genres.includes(key.id) ? setGenresStr(key.name) : null)
-            });
-        }
-    }, [genreIDS, genres]);
-
-    const setGenreData = async () => {
-        setGenreIDS(await getGenres());
+    const handleReadMore = (movieid:number) => {
+        navigate(`/movie/detailed/${movieid}`);
     }
 
   return (
     <div className="latestGridChild" id={`grid${idnum}Child`}>
-        <div className="gridChildBackground">
+        <div className="gridChildBackground" onClick={() => handleReadMore(movieid)}>
             <div className="imgCover"></div>
             <img onLoad={handleImgLoad} onError={handleImgError} ref={imgRef} src={`https://image.tmdb.org/t/p/original`+backdrop} alt="movie backdrop" />
         </div>
@@ -66,11 +56,11 @@ export default function MovieLatestChild({ idnum, title, overview, genres, relea
                             return <p key={i}>⭐</p>
                         })}
                     </div>
-                    <div className="genreWrapper"><GenreIcon className="genreTag"/> {genresStr}</div>
+                    <div className="genreWrapper"><GenreIcon className="genreTag"/> {genresStr[0]}</div>
                     <div className="dateWrapper"><DateIcon className="dateTag"/> {moment(releaseDate).format("LL")}</div>
                 </div>
                 <p>{overview}</p>
-                <button>read more</button>
+                <button onClick={() => handleReadMore(movieid)}>read more</button>
             </div>
         : null
         }

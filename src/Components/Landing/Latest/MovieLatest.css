@@ -9,11 +9,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #000;
 }
 
 .latestGrid .latestGridChild {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .latestGrid .latestGridChild .gridChildBackground {

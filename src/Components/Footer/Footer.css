@@ -1,0 +1,98 @@
+.footerWrapper {
+  padding-top: 140px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#081b27), to(rgba(8, 27, 39, 0.8))), url("../../assets/images/footerbg.jpeg") center no-repeat;
+  background: linear-gradient(180deg, #081b27 0%, rgba(8, 27, 39, 0.8) 100%), url("../../assets/images/footerbg.jpeg") center no-repeat;
+  background-size: cover;
+  background-position-y: 65%;
+}
+
+.footerWrapper .mainFooterContent {
+  width: 640px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+
+.footerWrapper .mainFooterContent .mfcCol {
+  font-family: 'Catamaran', sans-serif;
+  list-style-type: none;
+  text-decoration: unset;
+}
+
+.footerWrapper .mainFooterContent .mfcCol.listitem {
+  color: #74a8cf;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footerWrapper .mainFooterContent .mfcCol.listitem:hover {
+  color: #f1b722;
+}
+
+.footerWrapper .mainFooterContent .mfcCol.header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #f5f5f5;
+  margin-bottom: 25px;
+}
+
+.footerWrapper .mainFooterContent .mfcCol.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.footerWrapper .mainFooterContent .mfcCol.social a {
+  text-decoration: unset;
+  color: #74a8cf;
+}
+
+.footerWrapper .mainFooterContent .mfcCol.social a:hover {
+  color: #f1b722;
+}
+
+.footerWrapper .footerHr {
+  border: 1px solid #8f9da733;
+}
+
+.footerWrapper .crSection {
+  padding: 45px 0;
+  font-weight: 400;
+  font-family: 'Catamaran', sans-serif;
+  text-align: center;
+}
+
+.footerWrapper .crSection span {
+  color: #8f9da7;
+  font-size: 13px;
+  line-height: 28px;
+}
+
+.footerWrapper .crSection a {
+  text-decoration: underline;
+  color: #4a80a8;
+}
+
+.footerWrapper .crSection a:hover {
+  color: #f5f5f5;
+}
+/*# sourceMappingURL=Footer.css.map */

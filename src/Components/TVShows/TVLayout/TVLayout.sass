@@ -1,0 +1,129 @@
+.TVLayoutWrapper
+    width: 1080px
+    margin: 0 auto
+    margin-top: 75px
+    .paginationBtns
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 20px
+        button
+            font-family: 'Catamaran', sans-serif
+            font-size: 16px
+            line-height: 25px
+            font-weight: 400
+            color: #f5f5f5
+            padding: 10px 35px 10px 35px
+            border-radius: 5px
+            border: 1px solid #ffffff26
+            background-color: transparent
+            cursor: pointer
+            transition: all .1s ease-in-out
+        button:hover
+            color: #F1B722
+    .rmBtn
+        display: none
+    &.grid
+        display: grid
+        grid-template-columns: auto auto auto auto
+        column-gap: 20px
+        row-gap: 75px
+        .tvShowCardWrapper
+            flex-direction: column
+            align-items: start
+            height: unset
+            width: unset
+            justify-content: center
+            span
+                width: 40px
+                height: 30px
+                font-size: 14px
+                line-height: 32px
+                left: 50%
+            .movieCardIMGWrapper
+                width: 255px
+                height: 365px
+                margin-left: unset
+                .loaderWrapper
+                    width: 100%
+                    height: 100%
+            .cardWrapperInfo
+                margin-top: 35px
+                margin-left: unset
+        .paginationBtns
+            grid-column: 4
+    &.thumb
+        display: grid
+        grid-template-columns: auto auto auto
+        column-gap: 20px
+        row-gap: 45px
+        .tvShowCardWrapper
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            height: 80px
+            width: 345px
+            span
+                width: 33px
+                height: 27px
+                font-size: 11px
+                line-height: 27px
+                left: 9.5%
+            .movieCardIMGWrapper
+                width: 60px
+                height: 80px
+                margin-left: unset
+            .cardWrapperInfo
+                margin: 0
+                margin-left: 25px
+        .paginationBtns
+            grid-column: 2
+    &.list
+        width: 755px
+        display: flex
+        flex-direction: column
+        row-gap: 45px
+        .tvShowCardWrapper
+            flex-direction: row
+            align-items: center
+            justify-content: flex-start
+            height: 80px
+            width: 755px
+            span
+                width: 33px
+                height: 27px
+                font-size: 11px
+                line-height: 27px
+                left: 4.75%
+            .movieCardIMGWrapper
+                width: 60px
+                height: 80px
+                margin-left: 5px
+            .cardWrapperInfo
+                margin: 0
+                margin-left: 25px
+        .tvShowCardWrapper::before
+            content: ""
+            position: absolute
+            top: -33%
+            left: 1%
+            width: 750px
+            height: 1px
+            background-color: #1E313B
+        .rmBtn
+            display: block
+            position: absolute
+            right: 0
+            padding: 14px 25px 10px 25px
+            text-transform: uppercase
+            color: #f5f5f5
+            font-size: 13px
+            line-height: 20px
+            background-color: #263947
+            transition: all .2s ease-in-out
+            outline: unset
+            border: unset
+            cursor: pointer
+            border-radius: 5px
+        .rmBtn:hover
+            background-color: #374550

@@ -1,0 +1,162 @@
+.upcomingWrapper {
+  position: relative;
+}
+
+.upcomingWrapper .upcomingBackground .upcomingIMGCover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 26, 32, 0)), to(#081b27));
+  background: linear-gradient(180deg, rgba(18, 26, 32, 0) 0%, #081b27 100%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.upcomingWrapper .upcomingBackground .upcomingIMGWrapper {
+  width: 100%;
+  height: 900px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.upcomingWrapper .upcomingBackground .upcomingIMGWrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.upcomingWrapper .upcomingForeground {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  color: #f5f5f5;
+  z-index: 20;
+  font-family: 'Catamaran', sans-serif;
+  padding: 0 20px;
+}
+
+.upcomingWrapper .upcomingForeground span {
+  background-color: #F1B722;
+  width: 45px;
+  height: 32.5px;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+.upcomingWrapper .upcomingForeground h1 {
+  font-size: 75px;
+  white-space: break-spaces;
+  line-height: 65px;
+  font-weight: 800;
+}
+
+.upcomingWrapper .upcomingForeground p {
+  max-width: 510px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+.upcomingWrapper .upcomingForeground button {
+  margin-top: 35px;
+  padding: 14px 25px 11px 25px;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 135px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 13px;
+  line-height: 20px;
+  outline: unset;
+  border: 2px solid #f5f5f538;
+  color: #f5f5f5;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.upcomingWrapper .upcomingForeground button:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.upcomingWrapper .upcomingForeground .movieInfoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.upcomingWrapper .upcomingForeground #ratingStars p {
+  display: inline-block !important;
+}
+
+.upcomingWrapper .upcomingForeground .genreWrapper, .upcomingWrapper .upcomingForeground .dateWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 5px;
+}
+
+.upcomingWrapper .upcomingForeground .genreWrapper .genreTag, .upcomingWrapper .upcomingForeground .dateWrapper .genreTag {
+  width: 20px;
+  height: 17px;
+}
+
+.upcomingWrapper .upcomingForeground .genreWrapper {
+  color: #cad3da;
+  text-decoration: underline;
+}
+
+.upcomingWrapper .upcomingForeground .dateWrapper .dateTag {
+  width: 17px;
+  height: 17px;
+}
+/*# sourceMappingURL=Upcoming.css.map */
