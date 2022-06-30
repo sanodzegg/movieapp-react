@@ -15,6 +15,9 @@ import DetailedMovie from './Views/Detailed/DetailedMovie';
 import DetailedShow from './Views/Detailed/DetailedShow';
 import TVShowsView from './Views/TVShows/TVShowsView';
 import DiscoverView from './Views/Discover/DiscoverView';
+import GenreView from './Views/Category-Genre/GenreView';
+import AboutView from './Views/About/AboutView';
+import ContactView from './Views/Contact/ContactView';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -26,10 +29,11 @@ root.render(
         <Route path="/" element={<LandingView />} />
         <Route path="/tvshows" element={<TVShowsView />} />
         <Route path="/discover" element={<DiscoverView />} />
-        <Route path="/about" element={<LandingView />} />
-        <Route path="/contact" element={<LandingView />} />
+        <Route path="/about" element={<AboutView />} />
+        <Route path="/contact" element={<ContactView />} />
         <Route path="/movie/detailed/:id" element={<DetailedMovie />} />
         <Route path="/tvshows/detailed/:id" element={<DetailedShow />} />
+        <Route path="/category/:genre" element={<GenreView />} />
       </Routes>
     </Router>
   </React.StrictMode>

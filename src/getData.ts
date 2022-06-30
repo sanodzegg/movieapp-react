@@ -48,6 +48,33 @@ export const getTVShows = async (page:number) => {
     return data;
 }
 
+export const mixTVnMovie = async () => {
+    let endPoints = [
+        `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`,
+        `https://api.themoviedb.org/3/tv/top_rated?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`
+    ];
+
+    let randomSlicer = getRandom(16);
+
+    if (randomSlicer === 0) {
+        randomSlicer =+ 1;
+    }
+
+    await Promise.all(endPoints.map((endpoint) => axios.get(endpoint))).then(
+        axios.spread((movies, tvshows) => {
+            endPoints = [];
+            endPoints.push(movies.data.results.slice(randomSlicer, randomSlicer + 4), tvshows.data.results.slice(randomSlicer, randomSlicer + 3));
+        })
+    );
+    return endPoints;
+}
+
+export const getWithGenre = async (genre:number) => {
+    const res = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1&with_genres=${genre}`);
+    const data = await res.data.results
+    return data;    
+}
+
 // const getConf = () => {
 //     axios.get(`https://api.themoviedb.org/3/configuration?api_key=${process.env.REACT_APP_API_KEY}`)
 //     .then(data => {

@@ -26,11 +26,6 @@ export default function TVAsideSpotlight() {
         getSpotlightData();
     }, [])
 
-    useEffect(() => {
-        console.log(spotlightData);
-        
-    }, [spotlightData])
-
   return (
     <div className="tvAsideSpotlightWrapper">
         <p>In Spotlight today:</p>

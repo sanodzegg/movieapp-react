@@ -1,0 +1,14 @@
+.genreView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.genreView .genreView-Col {
+  width: 80%;
+}
+
+.genreView .genreView-Col.aside {
+  width: 20% !important;
+}
+/*# sourceMappingURL=GenreView.css.map */

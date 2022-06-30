@@ -17,13 +17,6 @@ interface objectTypes {
 
 export default function MoviecardSlide({data}:dataTypes) {
 
-    useEffect(() => {
-        data.map(e => {
-            // console.log(e);
-            
-        })
-    }, [])
-
   return <div className="slideWrapper">
     {data.map((e, i) => {
         return <Moviecard id={e.id} key={i} imagePath={e.poster_path} vote={e.vote_average} title={e.title} genres={e.genre_ids} />

@@ -1,0 +1,26 @@
+.genreMoviesHeader {
+  width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 75px 0 75px 0;
+}
+
+.genreMoviesHeader * {
+  font-family: 'Catamaran', sans-serif;
+}
+
+.genreMoviesHeader h1 {
+  font-size: 50px;
+  line-height: 54px;
+  font-weight: 900;
+  color: #f5f5f5;
+}
+
+.genreMoviesHeader p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #8ea9bd;
+  margin-top: 25px;
+}
+/*# sourceMappingURL=GenreMoviesHeader.css.map */

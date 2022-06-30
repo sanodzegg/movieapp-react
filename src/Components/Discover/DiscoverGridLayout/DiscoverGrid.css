@@ -1,0 +1,17 @@
+.discoverGridWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 2px;
+  min-height: 1000px;
+  position: relative;
+}
+
+.discoverGridWrapper .loaderWrapper {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=DiscoverGrid.css.map */

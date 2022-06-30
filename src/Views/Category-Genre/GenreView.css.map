@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,IAAI;CAIuB;;AALxC,AAEI,UAFM,CAEN,cAAc,CAAC;EACX,KAAK,EAAE,GAAG;CAEoB;;AALtC,AAIQ,UAJE,CAEN,cAAc,AAET,MAAM,CAAC;EACJ,KAAK,EAAE,cAAc;CAAG",
+    "sources": [
+        "GenreView.sass"
+    ],
+    "names": [],
+    "file": "GenreView.css"
+}

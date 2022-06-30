@@ -1,0 +1,87 @@
+.discoverGridMovieCardWrapper
+    max-height: 540px
+    position: relative
+    cursor: pointer
+    *
+        font-family: 'Catamaran', sans-serif
+    .discoverScore
+        position: absolute
+        width: 40px
+        height: 30px
+        border-radius: 40px
+        background-color: #f1b722
+        font-size: 14px
+        line-height: 30px
+        text-align: center
+        right: 5%
+        top: 5%
+        color: #f5f5f5
+    .discoverMovieCardBack
+        max-width: 100%
+        overflow: hidden
+        height: 100%
+        .imgCover
+            position: absolute
+            width: 100%
+            height: 100%
+        img
+            display: block
+            width: 100%
+            height: 100%
+            object-fit: cover
+            transition: all .3s ease-in-out
+    .discoverMovieCardFore
+        position: absolute
+        bottom: 5%
+        left: 5%
+        .discoverMovieInfo
+            display: flex
+            justify-content: flex-start
+            gap: 10px
+            margin-bottom: 10px
+            .discoverRatingStars
+                p
+                    display: inline-block
+            .discoverGenreWrapper
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                gap: 5px
+                color: #cad3da
+                text-decoration: underline
+                svg
+                    width: 20px
+                    height: 17px
+        .discoverTitle
+            font-size: 27px
+            color: #f5f5f5
+            line-height: 26px
+            font-weight: 600
+.discoverGridMovieCardWrapper:hover
+    .discoverMovieCardBack
+        .imgCover
+            background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%)
+            z-index: 10
+        img
+            transform: scale(1.1)
+#discoverGrid0Child
+    grid-row: 1 / 2
+    grid-column: 1 / 4
+#discoverGrid1Child
+    grid-row: 1 / 2
+    grid-column: 4 / 8
+#discoverGrid2Child
+    grid-row: 2 / 3
+    grid-column: 1 / 3
+#discoverGrid3Child
+    grid-row: 2 / 3
+    grid-column: 3 / 5
+#discoverGridTV0Child
+    grid-row: 2 / 3
+    grid-column: 5 / 8
+#discoverGridTV1Child
+    grid-row: 3 / 4
+    grid-column: 1 / 4
+#discoverGridTV2Child
+    grid-row: 3 / 4
+    grid-column: 4 / 8

@@ -1,0 +1,25 @@
+.discoverHeaderWrapper, .genresHeaderWrapper {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.discoverHeaderWrapper *, .genresHeaderWrapper * {
+  font-family: 'Catamaran', sans-serif;
+}
+
+.discoverHeaderWrapper h1, .genresHeaderWrapper h1 {
+  font-size: 100px;
+  line-height: 100px;
+  color: #f5f5f5;
+  font-weight: 900;
+}
+
+.discoverHeaderWrapper p, .genresHeaderWrapper p {
+  color: #8ea9bd;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+}
+/*# sourceMappingURL=DiscoverHeader.css.map */

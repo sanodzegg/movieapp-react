@@ -2,8 +2,6 @@ import React from "react";
 
 import { ReactComponent as SearchIcon } from '../../../assets/icons/search-thick.svg';
 
-import { NavLink } from "react-router-dom";
-
 import "./TVAside.css";
 import TVAsideNavigation from "./Navigation/TVAsideNavigation";
 import TVAsideSpotlight from "./Spotlight/TVAsideSpotlight";
