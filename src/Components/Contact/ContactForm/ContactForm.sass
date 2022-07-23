@@ -1,0 +1,97 @@
+.form
+    width: 655px
+    display: grid
+    column-gap: 20px
+    *
+        font-family: 'Catamaran', sans-serif
+    #fName
+        grid-row: 1 / 2
+        grid-column: 1 / 2
+    #lName
+        grid-row: 1 / 2
+        grid-column: 2 / 3
+    #pN
+        grid-row: 2 / 3
+        grid-column: 1 / 2
+    #email
+        grid-row: 2 / 3
+        grid-column: 2 / 3
+    #message
+        grid-row: 3 / 4
+        grid-column: 1 / 3
+    input
+        width: 315px
+        background-color: transparent
+        outline: unset
+        border: unset
+        border-bottom: 2px solid #54697abc
+        margin-top: 10px
+        padding: 10px 0
+
+        color: #f5f5f5
+        font-size: 24px
+        line-height: 30px
+        height: 70px
+    textarea
+        margin-top: 35px
+        width: 650px
+        outline: unset
+        border: unset
+        border-bottom: 2px solid #2B3E4D
+        background-color: transparent
+
+        color: #f5f5f5
+        font-size: 24px
+        line-height: 30px
+        padding-bottom: 60px
+        resize: none
+    .requiredAlert
+        border-bottom: 2px solid #c33434
+    ::placeholder
+        color: #f5f5f5
+        font-size: 24px
+        line-height: 30px
+
+    #submitBtn
+        margin-top: 20px
+        padding: 14px 25px 10px 25px
+        font-size: 13px
+        font-weight: 800
+        line-height: 30px
+        color: #f5f5f5
+        border-radius: 4px
+        width: 135px
+        height: 55px
+        background-color: #F1B722
+        border: unset
+        outline: unset
+        cursor: pointer
+        text-transform: uppercase
+
+    span
+        display: block
+        margin-top: 10px
+        color: #c33434
+        font-size: 18px
+        line-height: 25px
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus
+        -webkit-text-fill-color: #f5f5f5
+        -webkit-box-shadow: 0 0 0px 1000px transparent inset
+        transition: background-color 5000s ease-in-out 0s
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button
+        -webkit-appearance: none
+        margin: 0
+
+    input[type=number]
+        -moz-appearance: textfield

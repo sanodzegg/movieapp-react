@@ -11,7 +11,6 @@ import Searchbar from "../../Components/Landing/Searchbar/Searchbar";
 import Footer from '../../Components/Footer/Footer';
 
 export default function LandingView() {
-
   return (
     <div>
         <SiteLogo className="siteLogo"/>

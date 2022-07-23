@@ -14,6 +14,7 @@ interface props {
 
 export default function TVLayout({ layoutType }:any) {
 
+    const [imgLoaded, setImgLoaded] = useState(false);
 
     const index = localStorage.getItem("MovieReview-pagination-index");
 
@@ -30,6 +31,7 @@ export default function TVLayout({ layoutType }:any) {
     }
 
     const handlePagination = (type:string) => {
+        setImgLoaded(false);
         if(type === "next") {
             localStorage.setItem("MovieReview-pagination-index", `${parseInt(index!) + 1}`);
             setPageIndex(prev => prev += 1);
@@ -47,7 +49,7 @@ export default function TVLayout({ layoutType }:any) {
     <div className={`TVLayoutWrapper ${layoutType}`}>
         {tvShowsData.map((e:props, index:number) => {
             return (
-                <TVShowCard key={index} vote={e.vote_average} imagePath={e.backdrop_path} title={e.name} genres={e.genre_ids} id={e.id} />
+                <TVShowCard imgLoaded={imgLoaded} setImgLoaded={setImgLoaded} key={index} vote={e.vote_average} imagePath={e.backdrop_path} title={e.name} genres={e.genre_ids} id={e.id} />
             )
         })}
         <div className="paginationBtns">

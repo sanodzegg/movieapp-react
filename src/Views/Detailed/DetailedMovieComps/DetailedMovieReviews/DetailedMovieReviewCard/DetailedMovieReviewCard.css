@@ -1,0 +1,38 @@
+.detailedMovieReviewCardWrapper {
+  width: 750px;
+  margin: 50px auto 0 auto;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.detailedMovieReviewCardWrapper p {
+  color: #9cabb6;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.detailedMovieReviewCardWrapper p:hover {
+  cursor: pointer;
+  color: #f5f5f5;
+}
+
+.detailedMovieReviewCardWrapper .reviewInfo {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.detailedMovieReviewCardWrapper .reviewInfo span {
+  color: #9cabb6;
+}
+/*# sourceMappingURL=DetailedMovieReviewCard.css.map */

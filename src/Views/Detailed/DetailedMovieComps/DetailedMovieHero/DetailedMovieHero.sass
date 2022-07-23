@@ -1,0 +1,79 @@
+.detailedMovieHero
+    font-family: 'Catamaran', sans-serif
+    color: #f5f5f5
+    width: 100%
+    padding: 90px 0 70px 0
+    .movieHeroWrapper
+        position: relative
+        display: flex
+        width: 1075px
+        margin: 50px auto 0 auto
+        gap: 80px
+        justify-content: space-between
+        align-items: center
+        .rating
+            position: absolute
+            top: -10%
+            left: -4.5%
+            width: 100px
+            height: 100px
+            background-color: #f1b722
+            border-radius: 50%
+
+            padding-top: 35px
+            text-align: center
+            vertical-align: middle
+
+            font-size: 35px
+            line-height: 30px
+            font-weight: 700
+            color: #f5f5f5
+        .movieHeroIMGWrapper
+            min-width: 340px
+            max-width: 340px
+            height: 510px
+            border-radius: 10px
+            box-shadow: 11px 60px -10px #00000040
+            img
+                border-radius: 10px
+                height: 100%
+                width: 100%
+                object-fit: cover
+        .movieAboutWrapper
+            h1
+                font-size: 68px
+                width: 325px
+                line-height: 60px
+                font-weight: 800
+            p
+                width: 660px
+                font-size: 16px
+                line-height: 31px
+                font-weight: 400
+                font-family: 'Roboto', sans-serif
+            .movieInfoWrapper
+                display: flex
+                gap: 10px
+                align-items: center
+                font-size: 15px
+                line-height: 20px
+                margin-top: 20px
+                margin-bottom: 20px
+                #ratingStars
+                    p
+                        display: inline
+                .genreTag
+                    width: 20px
+                    height: 17px
+                .dateTag
+                    width: 17px
+                    height: 17px
+                .genreWrapper, .dateWrapper
+                    display: flex
+                    align-items: center
+                    gap: 5px
+                .genreWrapper
+                    text-decoration: underline
+                    color: #cad3da
+                .genreWrapper:hover
+                    color: #f5f5f5

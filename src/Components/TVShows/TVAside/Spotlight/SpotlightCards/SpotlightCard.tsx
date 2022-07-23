@@ -42,7 +42,7 @@ export default function SpotlightCard({ backdrop, id, name, vote, genres }:props
       <div className="movieCardIMGWrapper" onClick={() => handleNavigate(id)}>
         {!imgLoaded ? <Loader /> : null}
         <div className="imgCover"></div>
-        <img onError={handleIMGErr} ref={errRef} onLoad={handleLoad} src={`http://image.tmdb.org/t/p/original${backdrop}`} alt="backdrop image"/>
+        <img onError={handleIMGErr} ref={errRef} onLoad={handleLoad} src={`http://image.tmdb.org/t/p/w300${backdrop}`} alt="backdrop image"/>
       </div>
       <div className="cardWrapperInfo">
         <div id="ratingStars">

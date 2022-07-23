@@ -44,7 +44,7 @@ export default function GenreMovieCard({vote, imagePath, title, genres, id}:prop
       <div className="movieCardIMGWrapper" onClick={() => handleReadMore(id)}>
         {!imgLoaded ? <Loader /> : null}
         <div className="imgCover"></div>
-        <img onError={handleIMGError} onLoad={handleIMGLoad} ref={errRef} src={`http://image.tmdb.org/t/p/original${imagePath}`} alt="backdrop image"/>
+        <img onError={handleIMGError} onLoad={handleIMGLoad} ref={errRef} src={`http://image.tmdb.org/t/p/w780${imagePath}`} alt="backdrop image"/>
       </div>
       <div className="cardWrapperInfo">
         <div id="ratingStars">

@@ -1,0 +1,73 @@
+.reviewCardWrapper {
+  width: 325px;
+}
+
+.reviewCardWrapper * {
+  font-family: 'Catamaran', sans-serif;
+}
+
+.reviewCardWrapper .reviewCardIMGWrapper {
+  position: relative;
+  width: 100%;
+  height: 470px;
+  border-radius: 10px;
+}
+
+.reviewCardWrapper .reviewCardIMGWrapper .imgCover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 10px;
+}
+
+.reviewCardWrapper .reviewCardIMGWrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reviewCardWrapper .reviewCardIMGWrapper .textAreaBlur {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.reviewCardWrapper .reviewCardIMGWrapper .authorName {
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  top: 92.5%;
+  font-size: 35px;
+  line-height: 40px;
+  color: #f5f5f5;
+  font-weight: 800;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.reviewCardWrapper .contentWrapper {
+  font-size: 17px;
+  width: 300px;
+  margin: 25px auto 20px auto;
+  line-height: 28px;
+  color: #8d9eac;
+  font-family: 'Roboto', sans-serif;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.reviewCardWrapper .contentWrapper.extendable {
+  cursor: pointer;
+}
+
+.reviewCardWrapper .contentWrapper.extendable:hover {
+  color: #b3bdc5;
+}
+/*# sourceMappingURL=ReviewCard.css.map */

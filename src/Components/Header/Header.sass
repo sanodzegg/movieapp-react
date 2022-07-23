@@ -13,6 +13,10 @@
         align-items: center
         padding: 0 60px
 
+        @media screen and (max-width: 1280px)
+            flex-direction: column
+            padding: 20px 60px
+
         ul
             li
                 display: inline
@@ -26,6 +30,8 @@
                 line-height: 28px
                 padding: 25px 0
                 transition: color .3s ease-in-out
+                @media screen and (max-width: 1280px)
+                    padding: 5px 0
             a:hover
                 color: #f5f5f5
             .active
@@ -35,3 +41,5 @@
             position: unset
             width: 190px
             height: 20px
+            @media screen and (max-width: 1280px)
+                margin: 10px 0 15px 0
