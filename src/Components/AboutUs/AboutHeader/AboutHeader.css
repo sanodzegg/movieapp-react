@@ -1,0 +1,31 @@
+.aboutHeaderWrapper {
+  width: 100%;
+  padding: 170px 0;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 27, 39, 0)), to(#081b27)), url("../../../assets/images/aboutheader.jpeg") center no-repeat;
+  background: linear-gradient(180deg, rgba(8, 27, 39, 0) 0%, #081b27 100%), url("../../../assets/images/aboutheader.jpeg") center no-repeat;
+  background-size: cover;
+  background-position-y: 65%;
+}
+
+.aboutHeaderWrapper * {
+  font-family: 'Catamaran', sans-serif;
+}
+
+.aboutHeaderWrapper h1 {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 74px;
+  color: #f5f5f5;
+}
+
+.aboutHeaderWrapper p {
+  margin: 0 auto;
+  width: 690px;
+  margin-top: 30px;
+  font-size: 22px;
+  line-height: 38px;
+  color: #afbec9;
+  font-weight: 400;
+}
+/*# sourceMappingURL=AboutHeader.css.map */

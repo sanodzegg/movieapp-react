@@ -28,7 +28,7 @@ export default function Moviecard({ imagePath, vote, title, genres, id }:dataTyp
       <span>{vote > 0 ? vote : "?"}</span>
       <div className="movieCardIMGWrapper" onClick={() => handleReadMore(id)}>
         <div className="imgCover"></div>
-        <img src={`http://image.tmdb.org/t/p/w342${imagePath}`} alt="backdrop image"/>
+        <img src={`http://image.tmdb.org/t/p/w780${imagePath}`} alt="backdrop image"/>
       </div>
       <div className="cardWrapperInfo">
         <div id="ratingStars">

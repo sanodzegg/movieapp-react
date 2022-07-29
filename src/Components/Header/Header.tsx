@@ -11,7 +11,7 @@ import { ReactComponent as SiteLogo } from '../../assets/Logo-1.svg';
 export default function Header() {
   return <div className="navWrapper">
     <nav className="mainHeader">
-        <SiteLogo className="headerLogo"/>
+        <NavLink to="/"><SiteLogo className="headerLogo"/></NavLink>
             <ul>
                 <li><NavLink to="/" className={({isActive}) => (isActive ? "active" : "")}>Home</NavLink></li>
                 <li><NavLink to="/tvshows" className={({isActive}) => (isActive ? "active" : "")}>TV Shows</NavLink></li>

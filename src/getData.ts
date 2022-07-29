@@ -27,7 +27,7 @@ export const pushHighlights = async () => {
             endPoints["Featured"] = second.data.results.slice(startIndex, startIndex + 4);
             endPoints["Upcoming"] = last.data.results.slice(startIndex, startIndex + 4);
         })
-    )
+    );
     return endPoints;
 }
 
@@ -71,16 +71,66 @@ export const mixTVnMovie = async () => {
 
 export const getWithGenre = async (genre:number) => {
     const res = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1&with_genres=${genre}`);
-    const data = await res.data.results
+    const data = await res.data.results;
     return data;    
 }
 
-// const getConf = () => {
-//     axios.get(`https://api.themoviedb.org/3/configuration?api_key=${process.env.REACT_APP_API_KEY}`)
-//     .then(data => {
-//         console.log(data);
-        
-//     })
-// }
+export const getMovieReviews = async (movieid:string) => {
+    const res = await axios.get(`https://api.themoviedb.org/3/movie/${movieid}/reviews?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`);
+    const data = await res.data.results;
+    return data;
+}
 
-// getConf();
+export const getMovieDetailed = async (movieid:string) => {
+    const res = await axios.get(`https://api.themoviedb.org/3/movie/${movieid}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
+    const data = await res.data;
+    return data;
+}
+
+export const getMovieTrailer = async (movieid:string) => {
+    const res = await axios.get(`https://api.themoviedb.org/3/movie/${movieid}/videos?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
+    const data = await res.data.results;
+    const trailer = await data[data.length - 1];
+    return trailer;
+}
+
+export const getShowReviews = async (showid:string) => {
+    const res = await axios.get(`https://api.themoviedb.org/3/tv/${showid}/reviews?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`);
+    const data = await res.data.results;
+    return data;
+}
+
+export const getShowDetailed = async (showid:string) => {
+    const res = await axios.get(`https://api.themoviedb.org/3/tv/${showid}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
+    const data = await res.data;
+    return data;
+}
+
+export const getShowTrailer = async (showid:string) => {
+    const res = await axios.get(`https://api.themoviedb.org/3/tv/${showid}/videos?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
+    const data = await res.data.results;
+    const trailer = await data[data.length - 1];
+    return trailer;
+}
+
+export const getFeatured = async () => {
+    const res = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`);
+    const data = await res.data.results;
+    return data;
+}
+
+export const getAuthorPicks = async () => {
+    const res = await axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`);
+    const data = await res.data.results;
+    return data;
+}
+
+const getConf = () => {
+    axios.get(`https://api.themoviedb.org/3/configuration?api_key=${process.env.REACT_APP_API_KEY}`)
+    .then(data => {
+        console.log(data);
+        
+    });
+}
+
+getConf();

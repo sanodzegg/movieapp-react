@@ -12,13 +12,14 @@ interface tvShowCardTypes {
   imagePath: string,
   title: string,
   genres: object[],
-  id: number
+  id: number,
+  imgLoaded: any,
+  setImgLoaded: any
 }
 
-export default function TVShowCard({ vote, imagePath, title, genres, id }:tvShowCardTypes) {
+export default function TVShowCard({ vote, imagePath, title, genres, id, imgLoaded, setImgLoaded }:tvShowCardTypes) {
 
   const genresStr = useGenres(genres);
-  const [imgLoaded, setImgLoaded] = useState(false);
   const errRef = useRef<HTMLImageElement>(null);
 
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ export default function TVShowCard({ vote, imagePath, title, genres, id }:tvShow
     <div className="tvShowCardWrapper">
       <span>{vote > 0 ? vote : "?"}</span>
       <div className="movieCardIMGWrapper" onClick={() => handleNavigate(id)}>
-        {!imgLoaded ? <Loader /> : null}
+        {!imgLoaded && <Loader />}
         <div className="imgCover"></div>
         <img onError={handleImgError} ref={errRef} onLoad={handleImgLoad} src={`http://image.tmdb.org/t/p/original${imagePath}`} alt="backdrop image"/>
       </div>

@@ -1,0 +1,16 @@
+.quoteWrapper {
+  width: 750px;
+  margin: 0 auto;
+  background-color: #374451;
+  padding: 40px 50px;
+  border-left: 3px solid #F1B722;
+}
+
+.quoteWrapper p {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: 'Catamaran', sans-serif;
+  color: #f5f5f5;
+}
+/*# sourceMappingURL=DetailedMovieQuote.css.map */

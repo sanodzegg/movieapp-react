@@ -1,0 +1,20 @@
+.detailedMovieVideoWrapper {
+  width: 785px;
+  margin: 50px auto 0 auto;
+}
+
+.detailedMovieVideoWrapper h1 {
+  font-family: 'Catamaran', sans-serif;
+  color: #f1b722;
+  font-size: 29px;
+  line-height: 23px;
+  font-weight: 400;
+  margin: 50px 0;
+}
+
+.detailedMovieVideoWrapper .detailedMovieIFRM {
+  border: none;
+  width: 100%;
+  aspect-ratio: 2/1;
+}
+/*# sourceMappingURL=DetailedMovieVideo.css.map */
