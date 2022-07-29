@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 import Header from "../../Components/Header/Header";
 
 import "./DetailedMovie.css";
 import Footer from '../../Components/Footer/Footer';
 import Searchbar from '../../Components/Landing/Searchbar/Searchbar';
-import { useParams } from 'react-router-dom';
 import { getMovieDetailed, getMovieTrailer } from '../../getData';
+
+
 import DetailedMovieHero from './DetailedMovieComps/DetailedMovieHero/DetailedMovieHero';
 import DetailedMovieQuote from "./DetailedMovieComps/DetailedMovieQuote/DetailedMovieQuote";
 import DetailedMovieReviews from "./DetailedMovieComps/DetailedMovieReviews/DetailedMovieReviews";

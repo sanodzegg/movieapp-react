@@ -27,7 +27,7 @@ export const pushHighlights = async () => {
             endPoints["Featured"] = second.data.results.slice(startIndex, startIndex + 4);
             endPoints["Upcoming"] = last.data.results.slice(startIndex, startIndex + 4);
         })
-    )
+    );
     return endPoints;
 }
 
@@ -113,6 +113,18 @@ export const getShowTrailer = async (showid:string) => {
     return trailer;
 }
 
+export const getFeatured = async () => {
+    const res = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`);
+    const data = await res.data.results;
+    return data;
+}
+
+export const getAuthorPicks = async () => {
+    const res = await axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`);
+    const data = await res.data.results;
+    return data;
+}
+
 const getConf = () => {
     axios.get(`https://api.themoviedb.org/3/configuration?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(data => {
@@ -121,4 +133,4 @@ const getConf = () => {
     });
 }
 
-getConf()
+getConf();

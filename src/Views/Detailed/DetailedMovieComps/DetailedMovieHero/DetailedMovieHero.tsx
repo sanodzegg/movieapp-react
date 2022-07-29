@@ -20,7 +20,7 @@ export default function DetailedMovieHero({ title, vote, genres, date, overview,
 
     const movieHeroStyle = {
         "background" : `linear-gradient(180deg, rgba(8,27,39,0.9) 14%, rgba(8,27,39,1) 100%), url(https://image.tmdb.org/t/p/original${backdrop}) center no-repeat`,
-        "background-size" : "cover"
+        "backgroundSize" : "cover"
     }
 
     return (

@@ -23,7 +23,7 @@ export default function SpotlightCard({ backdrop, id, name, vote, genres }:props
     const navigate = useNavigate();
 
     const handleNavigate = (movieid:number) => {
-        navigate(`/tvshows/${movieid}`);
+        navigate(`/tvshows/detailed/${movieid}`);
     }
 
     const handleLoad = () => {
