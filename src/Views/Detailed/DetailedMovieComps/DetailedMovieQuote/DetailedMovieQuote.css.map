@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,MAAM;EACd,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,SAAS;EAClB,WAAW,EAAE,iBAAiB;CAMP;;AAX3B,AAMI,aANS,CAMT,CAAC,CAAC;EACE,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,uBAAuB;EACpC,KAAK,EAAE,OAAO;CAAG",
-    "sources": [
-        "DetailedMovieQuote.sass"
-    ],
-    "names": [],
-    "file": "DetailedMovieQuote.css"
-}
+{"version":3,"sources":["DetailedMovieQuote.sass","DetailedMovieQuote.css"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,cAAA;EACA,yBAAA;EACA,kBAAA;EACA,8BAAA;ACCJ;ADAI;EACI,eAAA;EACA,iBAAA;EACA,gBAAA;EACA,oCAAA;EACA,cAAA;ACER","file":"DetailedMovieQuote.css"}

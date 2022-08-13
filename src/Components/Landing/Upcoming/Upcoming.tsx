@@ -12,6 +12,8 @@ import { ReactComponent as DateIcon } from '../../../assets/icons/clock.svg';
 import useGenres from '../../../hooks/useGenres';
 import { UpcomingList } from '../../../getData';
 
+import ErrImg from "../../../assets/images/errors/upcoming.png";
+
 interface movieDataTypes {
     backdrop_path?: string | undefined,
     genre_ids: any[],
@@ -58,9 +60,11 @@ export default function Upcoming() {
             <div className="upcomingBackground">
                 <div className="upcomingIMGCover"></div>
                 <div className="upcomingIMGWrapper">
-                    {movieData?.backdrop_path !== null ? 
+                    {movieData?.backdrop_path ? 
                     <img src={`https://image.tmdb.org/t/p/original`+movieData?.backdrop_path} alt="upcoming movie image" /> :
-                    <img src={`https://image.tmdb.org/t/p/original`+movieData?.poster_path} alt="upcoming movie image" />}
+                    !movieData?.backdrop_path && movieData?.poster_path ?
+                    <img src={`https://image.tmdb.org/t/p/original`+movieData?.poster_path} alt="upcoming movie image" /> : 
+                    <img src={ErrImg} alt="upcoming movie image"/> }
                 </div>
             </div>
             <div className="upcomingForeground">

@@ -1,0 +1,23 @@
+.searchViewWrapper {
+  font-family: "Catamaran", sans-serif;
+  width: 940px;
+  margin: 0 auto;
+}
+.searchViewWrapper h1 {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 54px;
+  color: #f5f5f5;
+  text-align: center;
+  margin-top: 70px;
+}
+.searchViewWrapper .searchBarWrapper {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.searchViewWrapper .searchBarWrapper p {
+  display: none;
+}
+.searchViewWrapper .searchBarWrapper svg {
+  top: 30%;
+}/*# sourceMappingURL=SearchMain.css.map */

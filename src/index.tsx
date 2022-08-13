@@ -20,6 +20,7 @@ import AboutView from './Views/About/AboutView';
 import ContactView from './Views/Contact/ContactView';
 import FeaturedView from './Views/Featured/FeaturedView';
 import AuthorPicksView from './Views/AuthorPicksView/AuthorPicksView';
+import SearchView from './Views/SearchView/SearchView';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -39,6 +40,8 @@ root.render(
 
         <Route path="/featured" element={<FeaturedView />} />
         <Route path="/author-picks" element={<AuthorPicksView />} />
+
+        <Route path="/search" element={<SearchView />} />
       </Routes>
     </Router>
   </React.StrictMode>

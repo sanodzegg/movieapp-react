@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,IAAI;EACT,IAAI,EAAE,IAAI;EACV,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,EAAE;EACX,gBAAgB,EAAE,WAAW;CAAG",
-    "sources": [
-        "Landing.sass"
-    ],
-    "names": [],
-    "file": "Landing.css"
-}
+{"version":3,"sources":["Landing.sass","Landing.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,SAAA;EACA,UAAA;EACA,YAAA;EACA,YAAA;EACA,WAAA;EACA,6BAAA;ACCJ","file":"Landing.css"}

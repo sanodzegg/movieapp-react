@@ -4,6 +4,8 @@ import {ReactComponent as GenreIcon} from "../../../../assets/icons/genretag.svg
 import useGenres from '../../../../hooks/useGenres';
 import { useNavigate } from 'react-router-dom';
 
+import ErrImg from "../../../../assets/images/errors/landingMain.png";
+
 interface props {
     backdrop: string,
     title: string,
@@ -29,7 +31,7 @@ export default function DiscoverGridMovieCard({ backdrop, title, vote, genres, i
     }
 
     const handleIMGError = () => {
-        errRef.current!.src = "https://media.istockphoto.com/photos/computer-error-picture-id1222806141?k=20&m=1222806141&s=612x612&w=0&h=GoODCHnR0mSefDBLWJpnqVnfRKH9ttdYPO0-KEYbb7w="
+        errRef.current!.src = ErrImg;
         
         setImgLoaded(true);
     }
@@ -43,7 +45,7 @@ export default function DiscoverGridMovieCard({ backdrop, title, vote, genres, i
         <span className="discoverScore">{vote}</span>
         <div className="discoverMovieCardBack">
             <div className="imgCover"></div>
-            <img onError={handleIMGError} ref={errRef} onLoad={handleImgLoad} src={backdrop ? `http://image.tmdb.org/t/p/original${backdrop}` : `http://image.tmdb.org/t/p/original${poster}`} alt="discover movie poster" />
+            <img onError={handleIMGError} ref={errRef} onLoad={handleImgLoad} src={backdrop ? `http://image.tmdb.org/t/p/original${backdrop}` : !backdrop && poster? `http://image.tmdb.org/t/p/original${poster}` : ErrImg} alt="discover movie poster" />
         </div>
         <div className="discoverMovieCardFore">
             <div className="discoverMovieInfo">

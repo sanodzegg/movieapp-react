@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;CAIiC;;AANhD,AAGI,eAHW,CAGX,WAAW,CAAC;EACR,UAAU,EAAE,WAAW;CAEe;;AAN9C,AAKQ,eALO,CAGX,WAAW,CAEP,WAAW,CAAC;EACR,gBAAgB,EAAE,WAAW;CAAG;;AAC5C,AAAA,SAAS,CAAC;EACN,MAAM,EAAE,mBAAmB;EAC3B,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,gBAAgB;CAAG",
-    "sources": [
-        "DetailedMovie.sass"
-    ],
-    "names": [],
-    "file": "DetailedMovie.css"
-}
+{"version":3,"sources":["DetailedMovie.sass","DetailedMovie.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,WAAA;ACCJ;ADAI;EACI,uBAAA;ACER;ADDQ;EACI,6BAAA;ACGZ;;ADFA;EACI,mDAAA;EACA,YAAA;EACA,wBAAA;ACKJ","file":"DetailedMovie.css"}

@@ -125,6 +125,22 @@ export const getAuthorPicks = async () => {
     return data;
 }
 
+export const search = async (term:string) => {
+    try {
+        const res = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1&query=${term}`);
+        const data = await res.data.results;
+        if(data.length === 0) {
+            const res = await axios.get(`https://api.themoviedb.org/3/search/tv?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1&query=${term}`);
+            const data = await res.data.results;
+            if(data.length === 0) {
+                throw new Error("No movie/tv show found.");
+            } return {data: data, type: "tvshows"};
+        } return {data: data, type: "movie"};
+    } catch(err) {
+        console.error(err);
+    }
+}
+
 const getConf = () => {
     axios.get(`https://api.themoviedb.org/3/configuration?api_key=${process.env.REACT_APP_API_KEY}`)
     .then(data => {
