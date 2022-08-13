@@ -1,9 +1,11 @@
-import React, {useState, useEffect} from "react";
+import { useRef } from "react";
 
 import { ReactComponent as GenreIcon } from "../../../../assets/icons/genretag.svg";
 import "./Moviecard.css";
 import useGenres from '../../../../hooks/useGenres';
 import { useNavigate } from 'react-router-dom';
+
+import ErrImg from "../../../../assets/images/errors/tvShows.png";
 
 interface dataTypes {
   imagePath: string,
@@ -19,8 +21,14 @@ export default function Moviecard({ imagePath, vote, title, genres, id }:dataTyp
 
   const navigate = useNavigate();
 
+  const errRef = useRef<HTMLImageElement>(null);
+
   const handleReadMore = (movieid:number) => {
     navigate(`/movie/detailed/${movieid}`);
+  }
+
+  const handleError = () => {
+    errRef.current!.src = ErrImg;
   }
 
   return (
@@ -28,7 +36,7 @@ export default function Moviecard({ imagePath, vote, title, genres, id }:dataTyp
       <span>{vote > 0 ? vote : "?"}</span>
       <div className="movieCardIMGWrapper" onClick={() => handleReadMore(id)}>
         <div className="imgCover"></div>
-        <img src={`http://image.tmdb.org/t/p/w780${imagePath}`} alt="backdrop image"/>
+        <img ref={errRef} onError={handleError} src={imagePath ? `http://image.tmdb.org/t/p/w780${imagePath}` : ErrImg} alt="backdrop image"/>
       </div>
       <div className="cardWrapperInfo">
         <div id="ratingStars">

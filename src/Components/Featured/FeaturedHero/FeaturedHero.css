@@ -2,34 +2,28 @@
   position: relative;
   max-height: 900px;
   overflow: hidden;
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
 }
-
 .featuredHeroWrapper .featuredHeroIMGCover {
   position: absolute;
   left: 0;
   top: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(14%, rgba(8, 27, 39, 0)), to(#081b27));
-  background: linear-gradient(180deg, rgba(8, 27, 39, 0) 14%, #081b27 100%);
+  background: linear-gradient(180deg, rgba(8, 27, 39, 0) 14%, rgb(8, 27, 39) 100%);
   width: 100%;
   height: 100%;
 }
-
 .featuredHeroWrapper .featuredHeroIMG {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .featuredHeroWrapper .featuredHeroInfo {
   position: absolute;
   top: 50%;
   left: 25.5%;
-  -webkit-transform: translate(-74.5%, -50%);
-          transform: translate(-74.5%, -50%);
+  transform: translate(-74.5%, -50%);
 }
-
 .featuredHeroWrapper .featuredHeroInfo span {
   background-color: #F1B722;
   padding: 0px 12px;
@@ -40,7 +34,6 @@
   border-radius: 25px;
   color: #f5f5f5;
 }
-
 .featuredHeroWrapper .featuredHeroInfo h1 {
   margin-top: 20px;
   color: #f5f5f5;
@@ -49,59 +42,38 @@
   font-weight: 800;
   max-width: 450px;
 }
-
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   gap: 10px;
   margin: 20px 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper #ratingStars p {
   display: inline-block !important;
 }
-
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .genreWrapper, .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .dateWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   gap: 5px;
 }
-
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .genreWrapper .genreTag, .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .dateWrapper .genreTag {
   width: 20px;
   height: 17px;
 }
-
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .genreWrapper {
   color: #cad3da;
   text-decoration: underline;
 }
-
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .dateWrapper {
   color: #f5f5f5;
 }
-
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .dateWrapper .dateTag {
   width: 17px;
   height: 17px;
 }
-
 .featuredHeroWrapper .featuredHeroInfo .rmBtn {
   margin-top: 10px;
   padding: 14px 25px 11px 25px;
@@ -114,15 +86,12 @@
   font-size: 13px;
   line-height: 20px;
   outline: unset;
-  border: 2px solid #f5f5f538;
+  border: 2px solid rgba(245, 245, 245, 0.2196078431);
   color: #f5f5f5;
   cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-
 .featuredHeroWrapper .featuredHeroInfo .rmBtn:hover {
   background-color: #fff;
   color: #000000;
-}
-/*# sourceMappingURL=FeaturedHero.css.map */
+}/*# sourceMappingURL=FeaturedHero.css.map */

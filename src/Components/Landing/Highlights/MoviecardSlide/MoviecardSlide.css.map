@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,MAAM;CAAG",
-    "sources": [
-        "MoviecardSlide.sass"
-    ],
-    "names": [],
-    "file": "MoviecardSlide.css"
-}
+{"version":3,"sources":["MoviecardSlide.sass","MoviecardSlide.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,6BAAA;EACA,mBAAA;EACA,iBAAA;ACCJ","file":"MoviecardSlide.css"}

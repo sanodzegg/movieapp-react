@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
         <hr className="footerHr" />
         <div className="crSection">
-            <span>Copyright © Movie   Reviews Clone built by <a href="https://github.com/sanodzegg" target="_blank">Giorgi Sanodze</a> - Template design by <a href="https://www.studiocorvus.com/" target="_blank">Studio Corvus</a> - Powerd by <a href="https://webflow.com/" target="_blank">Webflow</a></span>
+            <span>Built by <a href="https://github.com/sanodzegg" target="_blank">Giorgi Sanodze</a> - Template design by <a href="https://www.studiocorvus.com/" target="_blank">Studio Corvus</a> - Powerd by <a href="https://webflow.com/" target="_blank">Webflow</a></span>
         </div>
     </div>
   );

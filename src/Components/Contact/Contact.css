@@ -1,28 +1,23 @@
 .contactWrapper {
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 26, 32, 0)), to(#081b27)), url("../../assets/images/footerbg.jpeg") center no-repeat;
-  background: linear-gradient(180deg, rgba(18, 26, 32, 0) 0%, #081b27 100%), url("../../assets/images/footerbg.jpeg") center no-repeat;
+  background: linear-gradient(180deg, rgba(18, 26, 32, 0) 0%, rgb(8, 27, 39) 100%), url("../../assets/images/footerbg.jpeg") center no-repeat;
   background-size: cover;
   background-position-y: 65%;
 }
-
 .contactWrapper .contactFormWrapper {
   width: 1080px;
   margin: 0 auto;
   padding-top: 50px;
   height: 90vh;
 }
-
 .contactWrapper .emailSentWrapper {
   height: 90vh;
   padding-top: 250px;
 }
-
 .contactWrapper .emailSentWrapper h1 {
   color: #f5f5f5;
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
   text-align: center;
   font-size: 50px;
   line-height: 100px;
-}
-/*# sourceMappingURL=Contact.css.map */
+}/*# sourceMappingURL=Contact.css.map */

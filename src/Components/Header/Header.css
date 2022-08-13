@@ -7,72 +7,52 @@
   top: 0;
   z-index: 30;
 }
-
 .navWrapper .mainHeader {
   background-color: #0C2738;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 60px;
 }
-
 @media screen and (max-width: 1280px) {
   .navWrapper .mainHeader {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 20px 60px;
   }
 }
-
 .navWrapper .mainHeader ul li {
   display: inline;
   margin: 0 22.5px;
 }
-
 .navWrapper .mainHeader ul a {
   text-decoration: unset;
   color: #899ead;
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
   padding: 25px 0;
-  -webkit-transition: color .3s ease-in-out;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
-
 @media screen and (max-width: 1280px) {
   .navWrapper .mainHeader ul a {
     padding: 5px 0;
   }
 }
-
 .navWrapper .mainHeader ul a:hover {
   color: #f5f5f5;
 }
-
 .navWrapper .mainHeader ul .active {
   border-bottom: 2px solid #F1B722;
 }
-
 .navWrapper .mainHeader .headerLogo {
   margin: 30px 0;
   position: unset;
   width: 190px;
   height: 20px;
 }
-
 @media screen and (max-width: 1280px) {
   .navWrapper .mainHeader .headerLogo {
     margin: 10px 0 15px 0;
   }
-}
-/*# sourceMappingURL=Header.css.map */
+}/*# sourceMappingURL=Header.css.map */

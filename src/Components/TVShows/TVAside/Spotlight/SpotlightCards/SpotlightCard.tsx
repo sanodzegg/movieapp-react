@@ -5,6 +5,8 @@ import {ReactComponent as GenreIcon} from "../../../../../assets/icons/genretag.
 import { useNavigate } from 'react-router-dom';
 import Loader from '../../../../Landing/Loader/Loader';
 
+import ErrImg from "../../../../../assets/images/errors/spotlight.png";
+
 interface props {
     backdrop: string,
     id: number,
@@ -31,7 +33,7 @@ export default function SpotlightCard({ backdrop, id, name, vote, genres }:props
     }
 
     const handleIMGErr = () => {
-        errRef.current!.src = "https://mediawebben.se/assets/img/error/img.png";
+        errRef.current!.src = ErrImg;
     
         setImgLoaded(true);
     }
@@ -42,7 +44,7 @@ export default function SpotlightCard({ backdrop, id, name, vote, genres }:props
       <div className="movieCardIMGWrapper" onClick={() => handleNavigate(id)}>
         {!imgLoaded ? <Loader /> : null}
         <div className="imgCover"></div>
-        <img onError={handleIMGErr} ref={errRef} onLoad={handleLoad} src={`http://image.tmdb.org/t/p/w300${backdrop}`} alt="backdrop image"/>
+        <img onError={handleIMGErr} ref={errRef} onLoad={handleLoad} src={backdrop ? `http://image.tmdb.org/t/p/w300${backdrop}` : ErrImg} alt="backdrop image"/>
       </div>
       <div className="cardWrapperInfo">
         <div id="ratingStars">

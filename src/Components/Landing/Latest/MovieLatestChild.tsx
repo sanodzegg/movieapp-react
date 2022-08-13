@@ -7,6 +7,8 @@ import { ReactComponent as GenreIcon } from '../../../assets/icons/genretag.svg'
 import { ReactComponent as DateIcon } from '../../../assets/icons/clock.svg';
 import useGenres from '../../../hooks/useGenres';
 
+import ErrImg from "../../../assets/images/errors/landingMain.png";
+
 interface childTypes {
     movieid: number,
     idnum: number,
@@ -33,7 +35,7 @@ export default function MovieLatestChild({ movieid, idnum, title, overview, genr
 
     const handleImgError = () => {
         setImgLoaded(false);
-        imgRef.current!.style.display = "none";
+        imgRef.current!.src = ErrImg;
     }
 
     const handleReadMore = (movieid:number) => {
@@ -44,7 +46,7 @@ export default function MovieLatestChild({ movieid, idnum, title, overview, genr
     <div className="latestGridChild" id={`grid${idnum}Child`}>
         <div className="gridChildBackground" onClick={() => handleReadMore(movieid)}>
             <div className="imgCover"></div>
-            <img onLoad={handleImgLoad} onError={handleImgError} ref={imgRef} src={`https://image.tmdb.org/t/p/original`+backdrop} alt="movie backdrop" />
+            <img onLoad={handleImgLoad} onError={handleImgError} ref={imgRef} src={backdrop ? `https://image.tmdb.org/t/p/original${backdrop}` : ErrImg} alt="movie backdrop" />
         </div>
         {imgLoaded ? 
             <div className="gridChildForeground">

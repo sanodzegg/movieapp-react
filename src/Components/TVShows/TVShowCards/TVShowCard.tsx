@@ -7,6 +7,8 @@ import useGenres from '../../../hooks/useGenres';
 import { useNavigate } from 'react-router-dom';
 import Loader from "../../Landing/Loader/Loader";
 
+import ErrImg from "../../../assets/images/errors/tvShows.png";
+
 interface tvShowCardTypes {
   vote: number,
   imagePath: string,
@@ -33,7 +35,7 @@ export default function TVShowCard({ vote, imagePath, title, genres, id, imgLoad
   }
 
   const handleImgError = () => {
-    errRef.current!.src = "https://mediawebben.se/assets/img/error/img.png";
+    errRef.current!.src = ErrImg;
     
     setImgLoaded(true);
   }
@@ -44,7 +46,7 @@ export default function TVShowCard({ vote, imagePath, title, genres, id, imgLoad
       <div className="movieCardIMGWrapper" onClick={() => handleNavigate(id)}>
         {!imgLoaded && <Loader />}
         <div className="imgCover"></div>
-        <img onError={handleImgError} ref={errRef} onLoad={handleImgLoad} src={`http://image.tmdb.org/t/p/original${imagePath}`} alt="backdrop image"/>
+        <img onError={handleImgError} ref={errRef} onLoad={handleImgLoad} src={imagePath ? `http://image.tmdb.org/t/p/original${imagePath}` : ErrImg} alt="backdrop image"/>
       </div>
       <div className="cardWrapperInfo">
         <div id="ratingStars">

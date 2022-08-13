@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACjB,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,yCAAyC;EACxD,GAAG,EAAE,GAAG;EACR,UAAU,EAAE,MAAM;EAClB,QAAQ,EAAE,QAAQ;CAIG;;AATzB,AAMI,oBANgB,CAMhB,cAAc,CAAC;EACX,OAAO,EAAE,EAAE;EACX,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAAG",
-    "sources": [
-        "DiscoverGrid.sass"
-    ],
-    "names": [],
-    "file": "DiscoverGrid.css"
-}
+{"version":3,"sources":["DiscoverGrid.sass","DiscoverGrid.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sDAAA;EACA,QAAA;EACA,kBAAA;EACA,kBAAA;ACCJ;ADAI;EACI,WAAA;EACA,WAAA;EACA,YAAA;ACER","file":"DiscoverGrid.css"}

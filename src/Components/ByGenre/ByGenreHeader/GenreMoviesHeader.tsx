@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./GenreMoviesHeader.css"
 
 export default function GenreMoviesHeader({category}:any) {

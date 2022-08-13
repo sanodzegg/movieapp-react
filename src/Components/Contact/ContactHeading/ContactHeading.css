@@ -1,7 +1,6 @@
 .contactHeadingWrapper * {
-  font-family: 'Catamaran', sans-serif;
+  font-family: "Catamaran", sans-serif;
 }
-
 .contactHeadingWrapper p {
   font-weight: 600;
   line-height: 38px;
@@ -11,7 +10,6 @@
   text-transform: uppercase;
   margin-left: 10px;
 }
-
 .contactHeadingWrapper h1 {
   font-size: 120px;
   line-height: 100px;
@@ -19,5 +17,4 @@
   font-weight: 900;
   width: 550px;
   margin-top: 35px;
-}
-/*# sourceMappingURL=ContactHeading.css.map */
+}/*# sourceMappingURL=ContactHeading.css.map */

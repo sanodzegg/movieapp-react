@@ -2,18 +2,15 @@
   position: absolute;
   width: 100%;
 }
-
 .detailedHeader .navWrapper {
   background: transparent;
 }
-
 .detailedHeader .navWrapper .mainHeader {
   background-color: transparent;
 }
 
 .reviewHr {
-  border: 1px solid #9cabb646;
+  border: 1px solid rgba(156, 171, 182, 0.2745098039);
   width: 785px;
   margin: 50px auto 0 auto;
-}
-/*# sourceMappingURL=DetailedMovie.css.map */
+}/*# sourceMappingURL=DetailedMovie.css.map */

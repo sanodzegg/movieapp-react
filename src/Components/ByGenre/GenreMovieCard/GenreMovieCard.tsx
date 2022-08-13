@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom';
 import useGenres from '../../../hooks/useGenres';
 import Loader from "../../Landing/Loader/Loader";
 
+import ErrImg from "../../../assets/images/errors/tvShows.png";
+
 interface props {
     vote: number,
     imagePath: string,
@@ -25,7 +27,7 @@ export default function GenreMovieCard({vote, imagePath, title, genres, id}:prop
     const errRef = useRef<HTMLImageElement>(null);
 
     const handleIMGError = () => {
-        errRef.current!.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+        errRef.current!.src = ErrImg
         
         setImgLoaded(true);
     }
@@ -44,7 +46,7 @@ export default function GenreMovieCard({vote, imagePath, title, genres, id}:prop
       <div className="movieCardIMGWrapper" onClick={() => handleReadMore(id)}>
         {!imgLoaded ? <Loader /> : null}
         <div className="imgCover"></div>
-        <img onError={handleIMGError} onLoad={handleIMGLoad} ref={errRef} src={`http://image.tmdb.org/t/p/w780${imagePath}`} alt="backdrop image"/>
+        <img onError={handleIMGError} onLoad={handleIMGLoad} ref={errRef} src={imagePath ? `http://image.tmdb.org/t/p/w780${imagePath}` : ErrImg} alt="backdrop image"/>
       </div>
       <div className="cardWrapperInfo">
         <div id="ratingStars">
