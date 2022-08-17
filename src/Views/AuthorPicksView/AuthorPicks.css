@@ -9,6 +9,12 @@
   text-align: center;
   font-family: "Catamaran", sans-serif !important;
 }
+@media screen and (max-width: 1395px) {
+  .featuredViewWrapper .featuredCardsHeader {
+    max-width: 1075px;
+    width: unset;
+  }
+}
 .featuredViewWrapper .featuredCardsHeader h1 {
   font-size: 100px;
   font-weight: 900;
@@ -29,6 +35,28 @@
   -moz-column-gap: 20px;
        column-gap: 20px;
   row-gap: 75px;
+}
+@media screen and (max-width: 1130px) {
+  .featuredViewWrapper .featuredCardsGrid {
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    max-width: 1075px;
+    width: unset;
+    margin-top: 7.752vw;
+    -moz-column-gap: 1.77vw;
+         column-gap: 1.77vw;
+    row-gap: 6.637vw;
+  }
+}
+@media screen and (max-width: 845px) {
+  .featuredViewWrapper .featuredCardsGrid {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 565px) {
+  .featuredViewWrapper .featuredCardsGrid {
+    grid-template-columns: auto;
+  }
 }
 .featuredViewWrapper .featuredCardsGrid * {
   font-family: "Catamaran", sans-serif !important;

@@ -8,6 +8,9 @@
         margin: 0 auto
         text-align: center
         font-family: 'Catamaran', sans-serif !important
+        @media screen and ( max-width: 1395px )
+            max-width: 1075px
+            width: unset
         h1
             font-size: 100px
             font-weight: 900
@@ -25,5 +28,17 @@
         margin-top: 65px
         column-gap: 20px
         row-gap: 75px
+        @media screen and ( max-width: 1130px )
+            grid-template-columns: auto auto auto
+            justify-content: center
+            max-width: 1075px
+            width: unset
+            margin-top: 7.752vw
+            column-gap: 1.770vw
+            row-gap: 6.637vw
+        @media screen and ( max-width: 845px )
+            grid-template-columns: auto auto
+        @media screen and ( max-width: 565px )
+            grid-template-columns: auto
         *
             font-family: 'Catamaran', sans-serif !important

@@ -21,6 +21,7 @@ import ContactView from './Views/Contact/ContactView';
 import FeaturedView from './Views/Featured/FeaturedView';
 import AuthorPicksView from './Views/AuthorPicksView/AuthorPicksView';
 import SearchView from './Views/SearchView/SearchView';
+import ScrollToTop from './topScroll';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -28,6 +29,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<LandingView />} />
         <Route path="/tvshows" element={<TVShowsView />} />

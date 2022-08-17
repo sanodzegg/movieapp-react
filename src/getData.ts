@@ -141,12 +141,11 @@ export const search = async (term:string) => {
     }
 }
 
-const getConf = () => {
-    axios.get(`https://api.themoviedb.org/3/configuration?api_key=${process.env.REACT_APP_API_KEY}`)
-    .then(data => {
-        console.log(data);
-        
-    });
-}
+// const getConf = () => {
+//     axios.get(`https://api.themoviedb.org/3/configuration?api_key=${process.env.REACT_APP_API_KEY}`)
+//     .then(data => {
+//         console.log(data);
+//     });
+// }
 
-getConf();
+// getConf();

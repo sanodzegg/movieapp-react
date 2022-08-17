@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { ReactComponent as GenreIcon } from '../../../../assets/icons/genretag.svg';
 import { ReactComponent as DateIcon } from '../../../../assets/icons/clock.svg';
@@ -19,7 +19,7 @@ export default function DetailedMovieHero({ title, vote, genres, date, overview,
         if(vote !== undefined) {
             setVoteAvg(Math.floor(vote / 2));
         }
-    }, []);
+    }, [vote]);
 
     const movieHeroStyle = {
         "background" : `linear-gradient(180deg, rgba(8,27,39,0.9) 14%, rgba(8,27,39,1) 100%), url(https://image.tmdb.org/t/p/original${backdrop}) center no-repeat`,

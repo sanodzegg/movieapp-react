@@ -39,7 +39,7 @@ export default function FeaturedView() {
         if(featuredData !== undefined) {
             setFeaturedFirst(featuredData[0]);
         }
-    }, [featuredData])
+    }, [featuredData]);
 
     return (
         <>
