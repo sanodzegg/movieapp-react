@@ -8,8 +8,6 @@ export default function Highlights() {
 
   const [highlightData, setHighlightData] = useState<object>([]);
 
-  const [deviceType, setDeviceType] = useState("");
-
   const buttonsRef = useRef<HTMLDivElement>(null);
   const train = useRef<HTMLDivElement>(null);
 
@@ -20,19 +18,14 @@ export default function Highlights() {
     });
     e.target.classList.add("active");
 
-    if(deviceType === "PC") {
+    const deviceSize = window.innerWidth;
+
+    if(deviceSize > 1100) {
       train.current!.style.left = `${index * -1075}px`
     } else {
       train.current!.style.left = `${index * -97.727}vw`
     }
   }
-
-  const handleWindowResize = () => {
-    if(window.innerWidth > 1100) {
-      setDeviceType("PC");
-    } else setDeviceType("Tablet");
-  }
-
 
   const setHLData = async () => {
     setHighlightData(await pushHighlights());
@@ -40,8 +33,6 @@ export default function Highlights() {
 
   useEffect(() => {
     setHLData();
-
-    window.addEventListener("resize", handleWindowResize);
   }, []);
 
   return (

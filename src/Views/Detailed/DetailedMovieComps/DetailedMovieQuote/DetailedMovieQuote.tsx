@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./DetailedMovieQuote.css";
 
 type props = {

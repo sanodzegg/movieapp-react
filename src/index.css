@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 img {
     user-select: none !important;
 }

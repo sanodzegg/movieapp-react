@@ -3,8 +3,6 @@
     max-height: 900px
     overflow: hidden
     font-family: 'Catamaran', sans-serif
-    .imgLoader
-
     .featuredHeroIMGCover
         position: absolute
         left: 0
@@ -21,6 +19,14 @@
         top: 50%
         left: 25.5%
         transform: translate(-74.5%, -50%)
+        @media screen and ( max-width: 1395px )
+            top: 28.029vw
+            left: 25.115vw
+        @media screen and ( max-width: 955px )
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            text-align: center
         span
             background-color: #F1B722
             padding: 0px 12px
@@ -33,6 +39,10 @@
             border-radius: 25px
 
             color: #f5f5f5
+            @media screen and ( max-width: 650px )
+                font-size: 3.385vw
+                line-height: 4.923vw
+                padding: 0 1.846vw
         h1
             margin-top: 20px
             color: #f5f5f5
@@ -40,6 +50,12 @@
             line-height: 65px
             font-weight: 800
             max-width: 450px
+            @media screen and ( max-width: 650px )
+                font-size: 5.538vw
+                line-height: 6vw
+                margin-top: 3.077vw
+            @media screen and ( max-width: 430px )
+                margin: 0
         .movieInfoWrapper
             display: flex
             justify-content: flex-start
@@ -47,20 +63,32 @@
             gap: 10px
             margin: 20px 0
             flex-wrap: wrap
+            @media screen and ( max-width: 650px )
+                margin: 3.077vw 0
+                gap: 1.538vw
+                justify-content: center
+            @media screen and ( max-width: 430px )
+                margin: 0
             #ratingStars
                 p
                     display: inline-block !important
+                    @media screen and ( max-width: 650px )
+                        font-size: 2.462vw
             .genreWrapper, .dateWrapper
                 display: flex
                 align-items: center
                 justify-content: space-between
                 gap: 5px
+                @media screen and ( max-width: 650px )
+                    font-size: 2.462vw
                 .genreTag
                     width: 20px
                     height: 17px
             .genreWrapper
                 color: #cad3da
                 text-decoration: underline
+                @media screen and ( max-width: 650px )
+                    font-size: 2.462vw
             .dateWrapper
                 color: #f5f5f5
                 .dateTag
@@ -85,7 +113,14 @@
             cursor: pointer
 
             transition: all .3s ease-in-out
-
+            @media screen and ( max-width: 650px )
+                width: 20.769vw
+                height: 7.692vw
+                padding: 2.154vw 3.846vw 1.692vw 3.846vw
+                margin-top: 1.538vw
+                font-size: 2vw
+                line-height: 1.077vw
+                white-space: nowrap
         .rmBtn:hover
             background-color: #fff
             color: #000000

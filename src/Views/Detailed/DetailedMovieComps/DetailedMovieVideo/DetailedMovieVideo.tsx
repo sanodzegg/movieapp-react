@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./DetailedMovieVideo.css";
 
 interface props {

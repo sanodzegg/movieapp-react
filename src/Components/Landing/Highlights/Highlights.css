@@ -55,20 +55,30 @@
   cursor: pointer;
   transition: color 0.2s ease-in-out;
 }
+@media screen and (max-width: 285px) {
+  .highlightsWrapper .highlightsHeader button {
+    width: 140px;
+  }
+}
 .highlightsWrapper .highlightsHeader button.active {
   color: #374550;
   background-color: #f5f5f5;
-}
-@media screen and (max-width: 450px) {
-  .highlightsWrapper .highlightsHeader button.active {
-    margin-top: 15px;
-  }
 }
 .highlightsWrapper .highlightsHeader button.active:hover {
   color: #333;
 }
 .highlightsWrapper .highlightsHeader button:hover {
   color: #f5f5f5;
+}
+@media screen and (max-width: 440px) {
+  .highlightsWrapper .highlightsHeader button:nth-child(3) {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 285px) {
+  .highlightsWrapper .highlightsHeader button:nth-child(2) {
+    margin-top: 10px;
+  }
 }
 .highlightsWrapper .moviecardsParentWrapper {
   position: relative;

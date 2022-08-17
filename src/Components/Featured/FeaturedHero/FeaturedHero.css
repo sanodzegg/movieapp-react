@@ -24,6 +24,20 @@
   left: 25.5%;
   transform: translate(-74.5%, -50%);
 }
+@media screen and (max-width: 1395px) {
+  .featuredHeroWrapper .featuredHeroInfo {
+    top: 28.029vw;
+    left: 25.115vw;
+  }
+}
+@media screen and (max-width: 955px) {
+  .featuredHeroWrapper .featuredHeroInfo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
 .featuredHeroWrapper .featuredHeroInfo span {
   background-color: #F1B722;
   padding: 0px 12px;
@@ -34,6 +48,13 @@
   border-radius: 25px;
   color: #f5f5f5;
 }
+@media screen and (max-width: 650px) {
+  .featuredHeroWrapper .featuredHeroInfo span {
+    font-size: 3.385vw;
+    line-height: 4.923vw;
+    padding: 0 1.846vw;
+  }
+}
 .featuredHeroWrapper .featuredHeroInfo h1 {
   margin-top: 20px;
   color: #f5f5f5;
@@ -41,6 +62,18 @@
   line-height: 65px;
   font-weight: 800;
   max-width: 450px;
+}
+@media screen and (max-width: 650px) {
+  .featuredHeroWrapper .featuredHeroInfo h1 {
+    font-size: 5.538vw;
+    line-height: 6vw;
+    margin-top: 3.077vw;
+  }
+}
+@media screen and (max-width: 430px) {
+  .featuredHeroWrapper .featuredHeroInfo h1 {
+    margin: 0;
+  }
 }
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper {
   display: flex;
@@ -50,14 +83,36 @@
   margin: 20px 0;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 650px) {
+  .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper {
+    margin: 3.077vw 0;
+    gap: 1.538vw;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 430px) {
+  .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper {
+    margin: 0;
+  }
+}
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper #ratingStars p {
   display: inline-block !important;
+}
+@media screen and (max-width: 650px) {
+  .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper #ratingStars p {
+    font-size: 2.462vw;
+  }
 }
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .genreWrapper, .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .dateWrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 5px;
+}
+@media screen and (max-width: 650px) {
+  .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .genreWrapper, .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .dateWrapper {
+    font-size: 2.462vw;
+  }
 }
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .genreWrapper .genreTag, .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .dateWrapper .genreTag {
   width: 20px;
@@ -66,6 +121,11 @@
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .genreWrapper {
   color: #cad3da;
   text-decoration: underline;
+}
+@media screen and (max-width: 650px) {
+  .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .genreWrapper {
+    font-size: 2.462vw;
+  }
 }
 .featuredHeroWrapper .featuredHeroInfo .movieInfoWrapper .dateWrapper {
   color: #f5f5f5;
@@ -90,6 +150,17 @@
   color: #f5f5f5;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 650px) {
+  .featuredHeroWrapper .featuredHeroInfo .rmBtn {
+    width: 20.769vw;
+    height: 7.692vw;
+    padding: 2.154vw 3.846vw 1.692vw 3.846vw;
+    margin-top: 1.538vw;
+    font-size: 2vw;
+    line-height: 1.077vw;
+    white-space: nowrap;
+  }
 }
 .featuredHeroWrapper .featuredHeroInfo .rmBtn:hover {
   background-color: #fff;

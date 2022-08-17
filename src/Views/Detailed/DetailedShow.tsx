@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Footer from "../../Components/Footer/Footer";
 import Searchbar from "../../Components/Landing/Searchbar/Searchbar";
 
-import "./DetailedShow.css";
 import Header from '../../Components/Header/Header';
 import { useParams } from 'react-router-dom';
 import { getShowDetailed, getShowTrailer } from '../../getData';

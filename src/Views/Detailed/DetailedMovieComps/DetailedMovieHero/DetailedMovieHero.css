@@ -36,7 +36,7 @@
 .detailedMovieHero .movieHeroWrapper .rating {
   position: absolute;
   top: -10%;
-  left: -4.5%;
+  left: -2.5%;
   width: 100px;
   height: 100px;
   background-color: #f1b722;
@@ -51,9 +51,9 @@
 }
 @media screen and (max-width: 1245px) {
   .detailedMovieHero .movieHeroWrapper .rating {
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     left: 50%;
-    top: 35%;
+    top: 50%;
   }
 }
 .detailedMovieHero .movieHeroWrapper .movieHeroIMGWrapper {

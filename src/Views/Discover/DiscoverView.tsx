@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from "react";
-
 import "./DiscoverView.css";
 import TVAside from '../../Components/TVShows/TVAside/TVAside';
 import Footer from '../../Components/Footer/Footer';
