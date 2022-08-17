@@ -6,4 +6,9 @@
   height: 55px;
   z-index: 20;
   background-color: transparent;
+}
+@media screen and (max-width: 1100px) {
+  .siteLogo {
+    display: none;
+  }
 }/*# sourceMappingURL=Landing.css.map */

@@ -1,1 +1,1 @@
-{"version":3,"sources":["DetailedMovie.sass","DetailedMovie.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,WAAA;ACCJ;ADAI;EACI,uBAAA;ACER;ADDQ;EACI,6BAAA;ACGZ;;ADFA;EACI,mDAAA;EACA,YAAA;EACA,wBAAA;ACKJ","file":"DetailedMovie.css"}
+{"version":3,"sources":["DetailedMovie.sass","DetailedMovie.css"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,WAAA;ACCJ;ADAI;EACI,uBAAA;ACER;ADDQ;EACI,6BAAA;ACGZ;;ADFA;EACI,mDAAA;EACA,YAAA;EACA,wBAAA;ACKJ;ADJI;EAJJ;IAKQ,aAAA;ECON;AACF","file":"DetailedMovie.css"}

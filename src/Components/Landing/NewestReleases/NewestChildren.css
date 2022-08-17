@@ -141,4 +141,49 @@
   -ms-grid-column-span: 1;
   grid-column: 4 / 5;
 }
-/*# sourceMappingURL=NewestChildren.css.map */
+
+@media screen and (max-width: 1125px) {
+  #gridChild0 {
+    display: none;
+    grid-column: unset;
+    grid-row: unset;
+  }
+  #gridChild1 {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  #gridChild2 {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  #gridChild3 {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  #gridChild4 {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .newestRelChild {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .newestRelChild {
+    width: 42.105vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .newestRelChild {
+    width: 85.714vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .newestRelChild {
+    min-width: unset;
+    width: 83.333vw;
+  }
+}

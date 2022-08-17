@@ -31,4 +31,34 @@
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
 }
-/*# sourceMappingURL=NewestReleases.css.map */
+
+@media screen and (max-width: 1125px) {
+  .newestRelGrid {
+    grid-template-columns: auto auto !important;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .newestRelWrapper {
+    width: unset;
+    max-width: 1080px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .newestRelGrid {
+    grid-template-columns: auto !important;
+  }
+}
+
+
+@media screen and (max-width: 445px) {
+  .newestRelWrapper {
+    margin-top: 50px;
+  }
+  .newestRelWrapper h1 {
+    font-size: 22.472vw;
+    line-height: 22.472vw;
+  }
+}

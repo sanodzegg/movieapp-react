@@ -17,4 +17,12 @@
   font-weight: 900;
   width: 550px;
   margin-top: 35px;
+}
+@media screen and (max-width: 645px) {
+  .contactHeadingWrapper h1 {
+    font-size: 18.605vw;
+    line-height: 15.504vw;
+    margin-top: 5.426vw;
+    width: 85.271vw;
+  }
 }/*# sourceMappingURL=ContactHeading.css.map */

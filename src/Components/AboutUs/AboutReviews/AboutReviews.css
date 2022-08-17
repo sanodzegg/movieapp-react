@@ -4,4 +4,18 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+@media screen and (max-width: 1155px) {
+  .aboutReviewsWrapper {
+    max-width: 1080px;
+    width: unset;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 995px) {
+  .aboutReviewsWrapper {
+    justify-content: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
 }/*# sourceMappingURL=AboutReviews.css.map */

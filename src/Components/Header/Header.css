@@ -7,6 +7,12 @@
   top: 0;
   z-index: 30;
 }
+@media screen and (max-width: 870px) {
+  .navWrapper {
+    padding: 0;
+    padding-left: 30px;
+  }
+}
 .navWrapper .mainHeader {
   background-color: #0C2738;
   display: flex;
@@ -18,6 +24,20 @@
   .navWrapper .mainHeader {
     flex-direction: column;
     padding: 20px 60px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .navWrapper .mainHeader {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+.navWrapper .mainHeader ul {
+  white-space: nowrap;
+}
+@media screen and (max-width: 870px) {
+  .navWrapper .mainHeader ul {
+    display: none;
   }
 }
 .navWrapper .mainHeader ul li {

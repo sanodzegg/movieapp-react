@@ -4,10 +4,14 @@
     background-size: cover
     background-position-y: 65%
     .contactFormWrapper
-        width: 1080px
+        width: 1120px
         margin: 0 auto
         padding-top: 50px
+        padding-left: 20px
         height: 90vh
+        @media screen and ( max-width: 1335px )
+            width: unset
+            max-width: 1120px
     .emailSentWrapper
         height: 90vh
         padding-top: 250px

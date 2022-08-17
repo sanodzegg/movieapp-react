@@ -1,7 +1,15 @@
 .detailedMovieReviewCardWrapper {
-  width: 750px;
+  width: 790px;
   margin: 50px auto 0 auto;
   font-family: "Catamaran", sans-serif;
+  padding: 0 20px;
+}
+@media screen and (max-width: 950px) {
+  .detailedMovieReviewCardWrapper {
+    max-width: 790px;
+    width: unset;
+    margin: 7.143vw auto 0 auto;
+  }
 }
 .detailedMovieReviewCardWrapper p {
   color: #9cabb6;
@@ -9,6 +17,12 @@
   line-height: 25px;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 950px) {
+  .detailedMovieReviewCardWrapper p {
+    font-size: 2.105vw;
+    line-height: 2.632vw;
+  }
 }
 .detailedMovieReviewCardWrapper p:hover {
   cursor: pointer;
@@ -20,6 +34,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 950px) {
+  .detailedMovieReviewCardWrapper .reviewInfo {
+    margin-top: 2.105vw;
+  }
 }
 .detailedMovieReviewCardWrapper .reviewInfo span {
   color: #9cabb6;

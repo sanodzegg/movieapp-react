@@ -19,7 +19,6 @@ export default function DetailedMovieHero({ title, vote, genres, date, overview,
         if(vote !== undefined) {
             setVoteAvg(Math.floor(vote / 2));
         }
-        
     }, []);
 
     const movieHeroStyle = {

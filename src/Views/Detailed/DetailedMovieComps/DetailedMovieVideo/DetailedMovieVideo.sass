@@ -1,6 +1,10 @@
 .detailedMovieVideoWrapper
-    width: 785px
+    width: 825px
     margin: 50px auto 0 auto
+    padding: 0 20px
+    @media screen and ( max-width: 925px )
+        max-width: 825px
+        width: unset
     h1
         font-family: 'Catamaran', sans-serif
         color: #f1b722
@@ -8,6 +12,10 @@
         line-height: 23px
         font-weight: 400
         margin: 50px 0
+        @media screen and ( max-width: 925px )
+            margin: 5.405vw 0
+            font-size: 3.135vw
+            line-height: 2.486vw
     .detailedMovieIFRM
         border: none
         width: 100%

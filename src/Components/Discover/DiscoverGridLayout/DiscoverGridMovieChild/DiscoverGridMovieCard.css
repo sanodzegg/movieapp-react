@@ -18,6 +18,7 @@
   right: 5%;
   top: 5%;
   color: #f5f5f5;
+  z-index: 20;
 }
 .discoverGridMovieCardWrapper .discoverMovieCardBack {
   max-width: 100%;
@@ -47,6 +48,11 @@
   justify-content: flex-start;
   gap: 10px;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 920px) {
+  .discoverGridMovieCardWrapper .discoverMovieCardFore .discoverMovieInfo {
+    flex-wrap: wrap;
+  }
 }
 .discoverGridMovieCardWrapper .discoverMovieCardFore .discoverMovieInfo .discoverRatingStars p {
   display: inline-block;
@@ -111,4 +117,12 @@
 #discoverGridTV2Child {
   grid-row: 3/4;
   grid-column: 4/8;
+}
+
+@media screen and (max-width: 725px) {
+  #discoverGrid0Child, #discoverGrid1Child, #discoverGrid2Child,
+#discoverGrid3Child, #discoverGridTV0Child, #discoverGridTV1Child, #discoverGridTV2Child {
+    grid-row: unset;
+    grid-column: unset;
+  }
 }/*# sourceMappingURL=DiscoverGridMovieCard.css.map */

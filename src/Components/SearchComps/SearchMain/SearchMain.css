@@ -1,7 +1,14 @@
 .searchViewWrapper {
   font-family: "Catamaran", sans-serif;
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
+  padding: 0 10px;
+}
+@media screen and (max-width: 975px) {
+  .searchViewWrapper {
+    max-width: 960px;
+    width: unset;
+  }
 }
 .searchViewWrapper h1 {
   font-weight: 900;
@@ -10,6 +17,13 @@
   color: #f5f5f5;
   text-align: center;
   margin-top: 70px;
+}
+@media screen and (max-width: 700px) {
+  .searchViewWrapper h1 {
+    font-size: 7.143vw;
+    line-height: 7.714vw;
+    margin-top: 10vw;
+  }
 }
 .searchViewWrapper .searchBarWrapper {
   margin-top: 20px;

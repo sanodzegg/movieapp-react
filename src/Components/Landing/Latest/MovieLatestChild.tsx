@@ -44,8 +44,8 @@ export default function MovieLatestChild({ movieid, idnum, title, overview, genr
 
   return (
     <div className="latestGridChild" id={`grid${idnum}Child`}>
-        <div className="gridChildBackground" onClick={() => handleReadMore(movieid)}>
-            <div className="imgCover"></div>
+        <div className="gridChildBackground">
+            <div className="imgCover" onClick={() => handleReadMore(movieid)}></div>
             <img onLoad={handleImgLoad} onError={handleImgError} ref={imgRef} src={backdrop ? `https://image.tmdb.org/t/p/original${backdrop}` : ErrImg} alt="movie backdrop" />
         </div>
         {imgLoaded ? 
@@ -62,7 +62,7 @@ export default function MovieLatestChild({ movieid, idnum, title, overview, genr
                     <div className="dateWrapper"><DateIcon className="dateTag"/> {moment(releaseDate).format("LL")}</div>
                 </div>
                 <p>{overview}</p>
-                <button onClick={() => handleReadMore(movieid)}>read more</button>
+                <button id={`btn${idnum}`} onClick={() => handleReadMore(movieid)}>read more</button>
             </div>
         : null
         }

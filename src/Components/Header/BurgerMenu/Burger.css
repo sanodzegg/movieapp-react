@@ -1,0 +1,42 @@
+.burgerMenu {
+  width: 60px;
+  height: 60px;
+  background: url("../../../assets/icons/burger.svg") #081B27 no-repeat center;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  display: none;
+}
+@media screen and (max-width: 870px) {
+  .burgerMenu {
+    display: block;
+  }
+}
+
+.burgerList {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #081B27;
+  padding: 40px 25px;
+  height: 100vh;
+}
+@media screen and (max-width: 870px) {
+  .burgerList {
+    display: block !important;
+  }
+}
+.burgerList li {
+  display: block !important;
+  width: 200px;
+}
+.burgerList li a {
+  display: block;
+  width: 100% !important;
+  padding: 20px 0 !important;
+  border-bottom: 2px solid #142935;
+}
+.burgerList li a.active {
+  border-bottom: 2px solid #F1B722 !important;
+}/*# sourceMappingURL=Burger.css.map */

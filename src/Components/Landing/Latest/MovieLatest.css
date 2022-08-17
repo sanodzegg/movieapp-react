@@ -6,6 +6,26 @@
   justify-content: center;
   background-color: #000;
 }
+@media screen and (max-width: 870px) {
+  .latestGrid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.latestGrid .tabletLogoHeader {
+  display: none;
+  padding: 25px 0;
+  justify-content: center;
+}
+@media screen and (max-width: 870px) {
+  .latestGrid .tabletLogoHeader {
+    display: flex;
+  }
+}
+.latestGrid .tabletLogoHeader svg {
+  height: 20px;
+  width: 190px;
+}
 .latestGrid .latestGridChild {
   position: relative;
   overflow: hidden;
@@ -44,8 +64,19 @@
   font-size: 70px;
   line-height: 65px;
 }
+@media screen and (max-width: 870px) {
+  .latestGrid #grid0Child h1 {
+    font-size: 6.897vw;
+    line-height: 7.471vw;
+  }
+}
 .latestGrid #grid0Child p {
   display: block !important;
+}
+@media screen and (max-width: 870px) {
+  .latestGrid #grid0Child p {
+    display: none !important;
+  }
 }
 .latestGrid #grid1Child {
   grid-row: 1/2;
@@ -55,9 +86,19 @@
   grid-row: 2/3;
   grid-column: 3/4;
 }
+@media screen and (max-width: 870px) {
+  .latestGrid #grid2Child {
+    display: none;
+  }
+}
 .latestGrid #grid3Child {
   grid-row: 2/3;
   grid-column: 4/5;
+}
+@media screen and (max-width: 870px) {
+  .latestGrid #grid3Child {
+    display: none;
+  }
 }
 .latestGrid .latestGridChild:hover .imgCover {
   -webkit-animation: shadow 0.2s forwards ease-in-out;
@@ -74,11 +115,16 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   color: #f5f5f5;
   z-index: 20;
   font-family: "Catamaran", sans-serif;
   padding: 0 20px;
+}
+@media screen and (max-width: 870px) {
+  .latestGrid .gridChildForeground {
+    top: 65%;
+  }
 }
 .latestGrid .gridChildForeground span {
   background-color: #F1B722;
@@ -91,10 +137,41 @@
   border-radius: 25px;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 1145px) {
+  .latestGrid .gridChildForeground span {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .latestGrid .gridChildForeground span {
+    margin-bottom: 3.448vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .latestGrid .gridChildForeground span {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .latestGrid .gridChildForeground span {
+    display: none;
+  }
+}
 .latestGrid .gridChildForeground h1 {
   font-size: 35px;
   white-space: break-spaces;
   line-height: 35px;
+}
+@media screen and (max-width: 1145px) {
+  .latestGrid .gridChildForeground h1 {
+    font-size: 3.057vw;
+  }
+}
+@media screen and (max-width: 870px) {
+  .latestGrid .gridChildForeground h1 {
+    font-size: 6.897vw;
+    line-height: 7.471vw;
+  }
 }
 .latestGrid .gridChildForeground p {
   display: none;
@@ -119,9 +196,22 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 1145px) {
+  .latestGrid .gridChildForeground button {
+    display: none;
+  }
+}
 .latestGrid .gridChildForeground button:hover {
   background-color: #fff;
   color: #000000;
+}
+.latestGrid .gridChildForeground #btn0 {
+  display: block !important;
+}
+@media screen and (max-width: 870px) {
+  .latestGrid .gridChildForeground #btn0 {
+    display: none !important;
+  }
 }
 .latestGrid .movieInfoWrapper {
   display: flex;
@@ -130,6 +220,29 @@
   gap: 10px;
   margin: 20px 0;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 1145px) {
+  .latestGrid .movieInfoWrapper {
+    gap: 0;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 870px) {
+  .latestGrid .movieInfoWrapper {
+    gap: 10px;
+    margin-top: 2.299vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .latestGrid .movieInfoWrapper {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  .latestGrid .movieInfoWrapper {
+    justify-content: flex-start;
+    gap: 0;
+  }
 }
 .latestGrid .movieInfoWrapper #ratingStars p {
   display: inline-block !important;

@@ -6,6 +6,18 @@
     grid-gap: 2px
     justify-content: center
     background-color: #000
+    @media screen and ( max-width: 870px )
+        display: flex
+        flex-direction: column
+    .tabletLogoHeader
+        display: none
+        padding: 25px 0
+        justify-content: center
+        @media screen and ( max-width: 870px )
+            display: flex
+        svg
+            height: 20px
+            width: 190px
     .latestGridChild
         position: relative
         overflow: hidden
@@ -37,17 +49,26 @@
         h1
             font-size: 70px
             line-height: 65px
+            @media screen and ( max-width: 870px )
+                font-size: 6.897vw
+                line-height: 7.471vw
         p
             display: block !important
+            @media screen and ( max-width: 870px )
+                display: none !important
     #grid1Child
         grid-row: 1 / 2
         grid-column: 3 / 5
     #grid2Child
         grid-row: 2 / 3
         grid-column: 3 / 4
+        @media screen and ( max-width: 870px )
+            display: none
     #grid3Child
         grid-row: 2 / 3
         grid-column: 4 / 5
+        @media screen and ( max-width: 870px )
+            display: none
     .latestGridChild:hover
         .imgCover
             animation: shadow .2s forwards ease-in-out
@@ -63,14 +84,15 @@
         display: flex
         justify-content: center
         flex-direction: column
-        align-items: start
+        align-items: flex-start
 
         color: #f5f5f5
 
         z-index: 20
         font-family: 'Catamaran', sans-serif
         padding: 0 20px
-
+        @media screen and ( max-width: 870px )
+            top: 65%
         span
             background-color: #F1B722
             width: 45px
@@ -84,16 +106,28 @@
             border-radius: 25px
 
             margin-bottom: 25px
+            @media screen and ( max-width: 1145px )
+                margin-bottom: 5px
+            @media screen and ( max-width: 870px )
+                margin-bottom: 3.448vw
+            @media screen and ( max-width: 550px )
+                margin-bottom: 5px
+            @media screen and ( max-width: 420px )
+                display: none
         h1
             font-size: 35px
             white-space: break-spaces
             line-height: 35px
+            @media screen and ( max-width: 1145px )
+                font-size: 3.057vw
+            @media screen and ( max-width: 870px )
+                font-size: 6.897vw
+                line-height: 7.471vw
         p
             display: none
             max-width: 510px
             font-size: 16px
             line-height: 32px
-
         button
             margin-top: 10px
             padding: 14px 25px 11px 25px
@@ -113,10 +147,15 @@
             cursor: pointer
 
             transition: all .3s ease-in-out
-
+            @media screen and ( max-width: 1145px )
+                display: none
         button:hover
             background-color: #fff
             color: #000000
+        #btn0
+            display: block !important
+            @media screen and ( max-width: 870px )
+                display: none !important
     .movieInfoWrapper
         display: flex
         justify-content: space-between
@@ -124,6 +163,17 @@
         gap: 10px
         margin: 20px 0
         flex-wrap: wrap
+        @media screen and ( max-width: 1145px )
+            gap: 0
+            margin: 0
+        @media screen and ( max-width: 870px )
+            gap: 10px
+            margin-top: 2.299vw
+        @media screen and ( max-width: 550px )
+            margin-top: 0
+        @media screen and ( max-width: 420px )
+            justify-content: flex-start
+            gap: 0
         #ratingStars
             p
                 display: inline-block !important

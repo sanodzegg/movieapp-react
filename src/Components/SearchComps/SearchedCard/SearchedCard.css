@@ -16,6 +16,13 @@
   height: 200px;
   border-radius: 5px;
 }
+@media screen and (max-width: 535px) {
+  .resultsWrapper .resultCard .resultImg {
+    height: 37.383vw;
+    max-width: 28.037vw;
+    min-width: 28.037vw;
+  }
+}
 .resultsWrapper .resultCard .resultImg img {
   width: 100%;
   height: 100%;
@@ -30,10 +37,22 @@
   line-height: 34px;
   font-weight: 400;
 }
+@media screen and (max-width: 700px) {
+  .resultsWrapper .resultCard .resultDesc h2 {
+    font-size: 4.143vw;
+    line-height: 4.857vw;
+  }
+}
 .resultsWrapper .resultCard .resultDesc p {
   font-size: 16px;
   color: #979797;
   line-height: 28px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 700px) {
+  .resultsWrapper .resultCard .resultDesc p {
+    font-size: 2.286vw;
+    line-height: 4vw;
+  }
 }/*# sourceMappingURL=SearchedCard.css.map */
