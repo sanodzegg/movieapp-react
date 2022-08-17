@@ -3,6 +3,13 @@
   margin: 0 auto;
   margin-top: 75px;
 }
+@media screen and (max-width: 1400px) {
+  .TVLayoutWrapper {
+    max-width: 1080px;
+    width: unset;
+    margin-top: 0;
+  }
+}
 .TVLayoutWrapper .paginationBtns {
   display: flex;
   justify-content: center;
@@ -35,12 +42,39 @@
        column-gap: 20px;
   row-gap: 75px;
 }
+@media screen and (max-width: 1400px) {
+  .TVLayoutWrapper.grid {
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 835px) {
+  .TVLayoutWrapper.grid {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .TVLayoutWrapper.grid {
+    grid-template-columns: auto;
+  }
+}
 .TVLayoutWrapper.grid .tvShowCardWrapper {
   flex-direction: column;
   align-items: start;
   height: unset;
   width: unset;
   justify-content: center;
+}
+@media screen and (max-width: 700px) {
+  .TVLayoutWrapper.grid .tvShowCardWrapper {
+    width: 64.286vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .TVLayoutWrapper.grid .tvShowCardWrapper {
+    width: auto;
+    padding: 0 10px;
+  }
 }
 .TVLayoutWrapper.grid .tvShowCardWrapper span {
   width: 40px;
@@ -54,6 +88,11 @@
   height: 365px;
   margin-left: unset;
 }
+@media screen and (max-width: 700px) {
+  .TVLayoutWrapper.grid .tvShowCardWrapper .movieCardIMGWrapper {
+    width: 100%;
+  }
+}
 .TVLayoutWrapper.grid .tvShowCardWrapper .movieCardIMGWrapper .loaderWrapper {
   width: 100%;
   height: 100%;
@@ -64,6 +103,22 @@
 }
 .TVLayoutWrapper.grid .paginationBtns {
   grid-column: 4;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1400px) {
+  .TVLayoutWrapper.grid .paginationBtns {
+    grid-column: 3;
+  }
+}
+@media screen and (max-width: 835px) {
+  .TVLayoutWrapper.grid .paginationBtns {
+    grid-column: 2;
+  }
+}
+@media screen and (max-width: 700px) {
+  .TVLayoutWrapper.grid .paginationBtns {
+    grid-column: 1;
+  }
 }
 .TVLayoutWrapper.thumb {
   display: grid;
@@ -72,12 +127,34 @@
        column-gap: 20px;
   row-gap: 45px;
 }
+@media screen and (max-width: 1275px) {
+  .TVLayoutWrapper.thumb {
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 730px) {
+  .TVLayoutWrapper.thumb {
+    grid-template-columns: auto;
+  }
+}
 .TVLayoutWrapper.thumb .tvShowCardWrapper {
   flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 80px;
   width: 345px;
+}
+@media screen and (max-width: 500px) {
+  .TVLayoutWrapper.thumb .tvShowCardWrapper {
+    width: 69vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .TVLayoutWrapper.thumb .tvShowCardWrapper {
+    width: auto;
+    padding: 0 15px;
+  }
 }
 .TVLayoutWrapper.thumb .tvShowCardWrapper span {
   width: 33px;
@@ -97,12 +174,24 @@
 }
 .TVLayoutWrapper.thumb .paginationBtns {
   grid-column: 2;
+  white-space: nowrap;
+}
+@media screen and (max-width: 730px) {
+  .TVLayoutWrapper.thumb .paginationBtns {
+    grid-column: 1;
+  }
 }
 .TVLayoutWrapper.list {
   width: 755px;
   display: flex;
   flex-direction: column;
   row-gap: 45px;
+}
+@media screen and (max-width: 1025px) {
+  .TVLayoutWrapper.list {
+    max-width: 755px;
+    width: unset;
+  }
 }
 .TVLayoutWrapper.list .tvShowCardWrapper {
   flex-direction: row;
@@ -111,6 +200,11 @@
   height: 80px;
   width: 755px;
 }
+@media screen and (max-width: 1025px) {
+  .TVLayoutWrapper.list .tvShowCardWrapper {
+    width: auto;
+  }
+}
 .TVLayoutWrapper.list .tvShowCardWrapper span {
   width: 33px;
   height: 27px;
@@ -118,14 +212,37 @@
   line-height: 27px;
   left: 4.75%;
 }
+@media screen and (max-width: 500px) {
+  .TVLayoutWrapper.list .tvShowCardWrapper span {
+    display: none;
+  }
+}
 .TVLayoutWrapper.list .tvShowCardWrapper .movieCardIMGWrapper {
   width: 60px;
   height: 80px;
   margin-left: 5px;
 }
+@media screen and (max-width: 500px) {
+  .TVLayoutWrapper.list .tvShowCardWrapper .movieCardIMGWrapper {
+    display: none;
+  }
+}
 .TVLayoutWrapper.list .tvShowCardWrapper .cardWrapperInfo {
   margin: 0;
   margin-left: 25px;
+}
+@media screen and (max-width: 500px) {
+  .TVLayoutWrapper.list .tvShowCardWrapper .cardWrapperInfo {
+    height: unset;
+    margin-left: 10px;
+    width: unset;
+    max-width: unset;
+  }
+}
+@media screen and (max-width: 500px) {
+  .TVLayoutWrapper.list .tvShowCardWrapper .cardWrapperInfo #ratingStars {
+    display: none;
+  }
 }
 .TVLayoutWrapper.list .tvShowCardWrapper::before {
   content: "";
@@ -135,6 +252,11 @@
   width: 750px;
   height: 1px;
   background-color: #1E313B;
+}
+@media screen and (max-width: 1025px) {
+  .TVLayoutWrapper.list .tvShowCardWrapper::before {
+    width: 98%;
+  }
 }
 .TVLayoutWrapper.list .rmBtn {
   display: block;
@@ -146,11 +268,21 @@
   font-size: 13px;
   line-height: 20px;
   background-color: #263947;
-  transition: all 0.2s ease-in-out;
+  transition: hover 0.2s ease-in-out;
   outline: unset;
   border: unset;
   cursor: pointer;
   border-radius: 5px;
+}
+@media screen and (max-width: 1025px) {
+  .TVLayoutWrapper.list .rmBtn {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .TVLayoutWrapper.list .rmBtn {
+    right: 10px;
+  }
 }
 .TVLayoutWrapper.list .rmBtn:hover {
   background-color: #374550;

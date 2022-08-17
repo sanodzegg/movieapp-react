@@ -2,6 +2,10 @@
     width: 1080px
     margin: 0 auto
     margin-top: 75px
+    @media screen and ( max-width: 1400px )
+        max-width: 1080px
+        width: unset
+        margin-top: 0
     .paginationBtns
         display: flex
         justify-content: center
@@ -28,12 +32,24 @@
         grid-template-columns: auto auto auto auto
         column-gap: 20px
         row-gap: 75px
+        @media screen and ( max-width: 1400px )
+            grid-template-columns: auto auto auto
+            justify-content: center
+        @media screen and ( max-width: 835px )
+            grid-template-columns: auto auto
+        @media screen and ( max-width: 700px )
+            grid-template-columns: auto
         .tvShowCardWrapper
             flex-direction: column
             align-items: start
             height: unset
             width: unset
             justify-content: center
+            @media screen and (max-width: 700px)
+                width: 64.286vw
+            @media screen and (max-width: 400px)
+                width: auto
+                padding: 0 10px
             span
                 width: 40px
                 height: 30px
@@ -44,6 +60,9 @@
                 width: 255px
                 height: 365px
                 margin-left: unset
+                @media screen and (max-width: 700px)
+                    width: 100%
+                @media screen and (max-width: 400px)
                 .loaderWrapper
                     width: 100%
                     height: 100%
@@ -52,17 +71,34 @@
                 margin-left: unset
         .paginationBtns
             grid-column: 4
+            white-space: nowrap
+            @media screen and ( max-width: 1400px )
+                grid-column: 3
+            @media screen and ( max-width: 835px )
+                grid-column: 2
+            @media screen and ( max-width: 700px )
+                grid-column: 1
     &.thumb
         display: grid
         grid-template-columns: auto auto auto
         column-gap: 20px
         row-gap: 45px
+        @media screen and ( max-width: 1275px )
+            grid-template-columns: auto auto
+            justify-content: center
+        @media screen and ( max-width: 730px )
+            grid-template-columns: auto
         .tvShowCardWrapper
             flex-direction: row
             align-items: center
             justify-content: center
             height: 80px
             width: 345px
+            @media screen and ( max-width: 500px )
+                width: 69vw
+            @media screen and ( max-width: 500px )
+                width: auto
+                padding: 0 15px
             span
                 width: 33px
                 height: 27px
@@ -78,30 +114,50 @@
                 margin-left: 25px
         .paginationBtns
             grid-column: 2
+            white-space: nowrap
+            @media screen and ( max-width: 730px )
+                grid-column: 1
     &.list
         width: 755px
         display: flex
         flex-direction: column
         row-gap: 45px
+        @media screen and ( max-width: 1025px )
+            max-width: 755px
+            width: unset
         .tvShowCardWrapper
             flex-direction: row
             align-items: center
             justify-content: flex-start
             height: 80px
             width: 755px
+            @media screen and ( max-width: 1025px )
+                width: auto
             span
                 width: 33px
                 height: 27px
                 font-size: 11px
                 line-height: 27px
                 left: 4.75%
+                @media screen and ( max-width: 500px )
+                    display: none
             .movieCardIMGWrapper
                 width: 60px
                 height: 80px
                 margin-left: 5px
+                @media screen and ( max-width: 500px )
+                    display: none
             .cardWrapperInfo
                 margin: 0
                 margin-left: 25px
+                @media screen and ( max-width: 500px )
+                    height: unset
+                    margin-left: 10px
+                    width: unset
+                    max-width: unset
+                #ratingStars
+                    @media screen and ( max-width: 500px )
+                        display: none
         .tvShowCardWrapper::before
             content: ""
             position: absolute
@@ -110,6 +166,8 @@
             width: 750px
             height: 1px
             background-color: #1E313B
+            @media screen and ( max-width: 1025px )
+                width: 98%
         .rmBtn
             display: block
             position: absolute
@@ -120,10 +178,14 @@
             font-size: 13px
             line-height: 20px
             background-color: #263947
-            transition: all .2s ease-in-out
+            transition: hover .2s ease-in-out
             outline: unset
             border: unset
             cursor: pointer
             border-radius: 5px
+            @media screen and ( max-width: 1025px )
+                right: 10px
+            @media screen and ( max-width: 500px )
+                right: 10px
         .rmBtn:hover
             background-color: #374550

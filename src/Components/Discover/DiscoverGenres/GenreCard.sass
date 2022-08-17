@@ -5,6 +5,13 @@
     grid-template-columns: auto auto auto
     row-gap: 15px
     column-gap: 20px
+    @media screen and ( max-width: 1380px )
+        grid-template-columns: auto auto
+        justify-content: center
+        max-width: 1080px
+        width: unset
+    @media screen and ( max-width: 770px )
+        grid-template-columns: auto
     *
         font-family: 'Catamaran', sans-serif
     .genreCardWrapper
@@ -12,6 +19,10 @@
         max-width: 350px
         transition: all .2s ease-in-out
         cursor: pointer
+        @media screen and ( max-width: 1380px )
+            width: 350px
+        @media screen and ( max-width: 770px )
+            width: 64.935vw
         a
             padding: 8px 0px 6px 33px
             display: block

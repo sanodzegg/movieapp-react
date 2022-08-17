@@ -4,6 +4,17 @@
     gap: 2px
     min-height: 1000px
     position: relative
+    @media screen and ( max-width: 725px )
+        display: flex
+        grid-template: unset
+        flex-direction: column
+        min-height: unset
+    .discoverGridMovieCardWrapper
+        @media screen and ( max-width: 725px )
+            height: 34.483vw
+        .discoverTitle
+            @media screen and ( max-width: 465px )
+                font-size: 5.806vw
     .loaderWrapper
         z-index: 10
         width: 100%

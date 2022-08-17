@@ -4,6 +4,16 @@
 .tvShowsView .tvShowsView-Col {
   width: 80%;
 }
+@media screen and (max-width: 1120px) {
+  .tvShowsView .tvShowsView-Col {
+    width: 100%;
+  }
+}
 .tvShowsView .tvShowsView-Col.aside {
   width: 20% !important;
+}
+@media screen and (max-width: 1120px) {
+  .tvShowsView .tvShowsView-Col.aside {
+    display: none;
+  }
 }/*# sourceMappingURL=TVShowsView.css.map */

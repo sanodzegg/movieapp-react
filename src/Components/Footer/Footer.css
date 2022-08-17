@@ -12,6 +12,17 @@
   align-items: center;
   margin-bottom: 80px;
 }
+@media screen and (max-width: 700px) {
+  .footerWrapper .mainFooterContent {
+    display: grid;
+    width: unset;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    row-gap: 20px;
+    -moz-column-gap: 14.286vw;
+         column-gap: 14.286vw;
+  }
+}
 .footerWrapper .mainFooterContent .mfcCol {
   font-family: "Catamaran", sans-serif;
   list-style-type: none;

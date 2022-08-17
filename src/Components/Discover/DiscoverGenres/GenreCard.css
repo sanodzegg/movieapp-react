@@ -8,6 +8,19 @@
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
+@media screen and (max-width: 1380px) {
+  .genresWrapper {
+    grid-template-columns: auto auto;
+    justify-content: center;
+    max-width: 1080px;
+    width: unset;
+  }
+}
+@media screen and (max-width: 770px) {
+  .genresWrapper {
+    grid-template-columns: auto;
+  }
+}
 .genresWrapper * {
   font-family: "Catamaran", sans-serif;
 }
@@ -16,6 +29,16 @@
   max-width: 350px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+@media screen and (max-width: 1380px) {
+  .genresWrapper .genreCardWrapper {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .genresWrapper .genreCardWrapper {
+    width: 64.935vw;
+  }
 }
 .genresWrapper .genreCardWrapper a {
   padding: 8px 0px 6px 33px;

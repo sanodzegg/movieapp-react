@@ -81,7 +81,8 @@
   line-height: 28px;
   color: #8d9eac;
   font-weight: 800;
-  margin: 40px 30px 30px 0px;
+  margin: 60px 30px 30px 0px;
+  white-space: nowrap;
 }
 .tvAsideWrapper .tvAsideSpotlightWrapper .spotlightCardWrapper {
   display: flex;
@@ -90,7 +91,6 @@
   align-items: center;
   justify-content: center;
   height: 80px;
-  min-width: 290px;
   margin-top: 20px;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
@@ -179,6 +179,11 @@
   color: #cad3da;
   text-decoration: underline;
   cursor: pointer;
+}
+@media screen and (max-width: 1500px) {
+  .tvAsideWrapper .tvAsideSpotlightWrapper .spotlightCardWrapper .cardWrapperInfo .genreWrapper {
+    display: none;
+  }
 }
 .tvAsideWrapper .tvAsideSpotlightWrapper .spotlightCardWrapper .cardWrapperInfo .genreWrapper .genreTag {
   width: 20px;

@@ -4,6 +4,19 @@
   padding: 100px 0;
   text-align: center;
 }
+@media screen and (max-width: 1380px) {
+  .discoverHeaderWrapper, .genresHeaderWrapper {
+    max-width: 1080px;
+    width: unset;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .discoverHeaderWrapper, .genresHeaderWrapper {
+    width: unset;
+    max-width: 1080px;
+    padding: 8.929vw 0;
+  }
+}
 .discoverHeaderWrapper *, .genresHeaderWrapper * {
   font-family: "Catamaran", sans-serif;
 }
@@ -13,9 +26,21 @@
   color: #f5f5f5;
   font-weight: 900;
 }
+@media screen and (max-width: 540px) {
+  .discoverHeaderWrapper h1, .genresHeaderWrapper h1 {
+    font-size: 18.519vw;
+    line-height: 18.519vw;
+  }
+}
 .discoverHeaderWrapper p, .genresHeaderWrapper p {
   color: #8ea9bd;
   font-size: 24px;
   line-height: 28px;
   font-weight: 300;
+}
+@media screen and (max-width: 400px) {
+  .discoverHeaderWrapper p, .genresHeaderWrapper p {
+    font-size: 6vw;
+    line-height: 6.2vw;
+  }
 }/*# sourceMappingURL=DiscoverHeader.css.map */

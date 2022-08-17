@@ -24,14 +24,14 @@ export default function Footer() {
             </ul>
             <ul className="mfcCol">
                 <li className="mfcCol listitem header">Community</li>
-                <li className="mfcCol listitem social"><Github /> <a href="https://github.com/sanodzegg" target="_blank">Github</a></li>
-                <li className="mfcCol listitem social"><Linkedin /> <a href="https://www.linkedin.com/in/giorgi-sanodze-a6002821a/" target="_blank">Linkedin</a></li>
-                <li className="mfcCol listitem social"><Facebook /> <a href="https://www.facebook.com/sanodzeg/" target="_blank">Facebook</a></li>
+                <li className="mfcCol listitem social"><Github /> <a href="https://github.com/sanodzegg" target="_blank" rel="noreferrer">Github</a></li>
+                <li className="mfcCol listitem social"><Linkedin /> <a href="https://www.linkedin.com/in/giorgi-sanodze-a6002821a/" target="_blank" rel="noreferrer">Linkedin</a></li>
+                <li className="mfcCol listitem social"><Facebook /> <a href="https://www.facebook.com/sanodzeg/" target="_blank" rel="noreferrer">Facebook</a></li>
             </ul>
         </div>
         <hr className="footerHr" />
         <div className="crSection">
-            <span>Built by <a href="https://github.com/sanodzegg" target="_blank">Giorgi Sanodze</a> - Template design by <a href="https://www.studiocorvus.com/" target="_blank">Studio Corvus</a> - Powerd by <a href="https://webflow.com/" target="_blank">Webflow</a></span>
+            <span>Built by <a href="https://github.com/sanodzegg" target="_blank" rel="noreferrer">Giorgi Sanodze</a> - Template design by <a href="https://www.studiocorvus.com/" target="_blank" rel="noreferrer">Studio Corvus</a></span>
         </div>
     </div>
   );

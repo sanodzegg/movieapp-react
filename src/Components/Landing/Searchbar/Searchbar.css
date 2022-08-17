@@ -3,6 +3,19 @@
   width: 550px;
   margin: 140px auto 30px auto;
 }
+@media screen and (max-width: 725px) {
+  .searchBarWrapper {
+    margin: 19.31vw auto 4.138vw auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .searchBarWrapper {
+    max-width: 550px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: unset;
+  }
+}
 .searchBarWrapper * {
   font-family: "Catamaran", sans-serif;
 }
@@ -23,11 +36,21 @@
   outline: unset;
   border: unset;
 }
+@media screen and (max-width: 425px) {
+  .searchBarWrapper input {
+    padding: 15px 30px;
+  }
+}
 .searchBarWrapper svg {
   cursor: pointer;
   position: absolute;
   top: 60%;
   right: 9.3%;
+}
+@media screen and (max-width: 425px) {
+  .searchBarWrapper svg {
+    display: none;
+  }
 }
 .searchBarWrapper .searching {
   -webkit-animation: heart 1s infinite ease-in-out;

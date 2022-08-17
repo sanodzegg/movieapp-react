@@ -1,1 +1,1 @@
-{"version":3,"sources":["DetailedMovieReviews.sass","DetailedMovieReviews.css"],"names":[],"mappings":"AACI;EACI,eAAA;EACA,gBAAA;EACA,iBAAA;EACA,cAAA;EACA,kBAAA;EACA,oCAAA;ACAR","file":"DetailedMovieReviews.css"}
+{"version":3,"sources":["DetailedMovieReviews.sass","DetailedMovieReviews.css"],"names":[],"mappings":"AACI;EACI,eAAA;EACA,gBAAA;EACA,iBAAA;EACA,cAAA;EACA,kBAAA;EACA,oCAAA;ACAR;ADCQ;EAPJ;IAQQ,eAAA;IACA,kBAAA;IACA,oBAAA;IACA,mBAAA;ECEV;AACF","file":"DetailedMovieReviews.css"}

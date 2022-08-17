@@ -1,12 +1,8 @@
-import React from "react";
-
-// router components
-import LandingView from "../../Views/Landing/LandingView";
-
 import { NavLink } from "react-router-dom";
 
 import "./Header.css";
 import { ReactComponent as SiteLogo } from '../../assets/Logo-1.svg';
+import Burger from './BurgerMenu/Burger';
 
 export default function Header() {
   return <div className="navWrapper">
@@ -19,6 +15,7 @@ export default function Header() {
                 <li><NavLink to="/about" className={({isActive}) => (isActive ? "active" : "")}>About Us</NavLink></li>
                 <li><NavLink to="/contact" className={({isActive}) => (isActive ? "active" : "")}>Contact</NavLink></li>
             </ul>
+          <Burger />
     </nav>
   </div>;
 }

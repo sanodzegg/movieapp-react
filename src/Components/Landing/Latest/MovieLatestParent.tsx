@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import { getRandom } from '../../../helpers';
+import { ReactComponent as SiteLogo } from '../../../assets/Logo-1.svg';
+
 import MovieLatestChild from "./MovieLatestChild";
 import Loader from "../Loader/Loader";
 
@@ -28,6 +30,9 @@ export default function MovieLatest() {
     return (
         <div className="latestGrid">
             {!imgLoaded ? <Loader /> : null}
+            <div className="tabletLogoHeader">
+                <SiteLogo />
+            </div>
             {displayData ? (
                 displayData.map((e, i) => <MovieLatestChild movieid={e.id} idnum={i} key={i} title={e.title} overview={e.overview} genres={e.genre_ids} releaseDate={e.release_date} backdrop={e.backdrop_path} vote={e.vote_average} imgLoaded={imgLoaded} setImgLoaded={setImgLoaded}/>)
             ) : null}

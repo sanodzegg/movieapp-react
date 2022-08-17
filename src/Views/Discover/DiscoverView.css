@@ -4,6 +4,16 @@
 .discoverView .discoverView-Col {
   width: 80%;
 }
+@media screen and (max-width: 1120px) {
+  .discoverView .discoverView-Col {
+    width: 100%;
+  }
+}
 .discoverView .discoverView-Col.aside {
   width: 20% !important;
+}
+@media screen and (max-width: 1120px) {
+  .discoverView .discoverView-Col.aside {
+    display: none;
+  }
 }/*# sourceMappingURL=DiscoverView.css.map */

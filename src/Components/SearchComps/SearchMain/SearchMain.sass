@@ -1,7 +1,11 @@
 .searchViewWrapper
     font-family: 'Catamaran', sans-serif
-    width: 940px
+    width: 960px
     margin: 0 auto
+    padding: 0 10px
+    @media screen and ( max-width: 975px )
+        max-width: 960px
+        width: unset
     h1
         font-weight: 900
         font-size: 50px
@@ -9,6 +13,10 @@
         color: #f5f5f5
         text-align: center
         margin-top: 70px
+        @media screen and ( max-width: 700px )
+            font-size: 7.143vw
+            line-height: 7.714vw
+            margin-top: 10vw
     .searchBarWrapper
         margin-top: 20px
         margin-bottom: 0

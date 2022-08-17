@@ -2,6 +2,13 @@
     position: relative
     width: 550px
     margin: 140px auto 30px auto
+    @media screen and ( max-width: 725px )
+        margin: 19.310vw auto 4.138vw auto
+    @media screen and ( max-width: 700px )
+        max-width: 550px
+        margin-left: 20px
+        margin-right: 20px
+        width: unset
     *
         font-family: 'Catamaran', sans-serif
     p
@@ -19,11 +26,15 @@
         border-radius: 40px
         outline: unset
         border: unset
+        @media screen and ( max-width: 425px )
+            padding: 15px 30px
     svg
         cursor: pointer
         position: absolute
         top: 60%
         right: 9.3%
+        @media screen and ( max-width: 425px )
+            display: none
     .searching
         animation: heart 1s infinite ease-in-out
     ::placeholder
