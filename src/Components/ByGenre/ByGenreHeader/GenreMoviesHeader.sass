@@ -2,7 +2,11 @@
     width: 1080px
     margin: 0 auto
     text-align: center
-    padding: 75px 0 75px 0
+    padding: 75px 0
+    @media screen and ( max-width: 1160px )
+        width: unset
+        max-width: 1080px
+        padding: 6.466vw 0
     *
         font-family: 'Catamaran', sans-serif
     h1
@@ -10,9 +14,16 @@
         line-height: 54px
         font-weight: 900
         color: #f5f5f5
+        @media screen and ( max-width: 485px )
+            font-size: 10.309vw
+            line-height: 11.134vw
     p
         font-weight: 300
         font-size: 24px
         line-height: 28px
         color: #8ea9bd
         margin-top: 25px
+        @media screen and ( max-width: 485px )
+            font-size: 4.948vw
+            line-height: 5.773vw
+            margin-top: 5.155vw

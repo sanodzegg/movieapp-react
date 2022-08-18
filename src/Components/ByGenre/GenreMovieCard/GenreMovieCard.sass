@@ -6,6 +6,16 @@
     column-gap: 30px
     grid-template-columns: auto auto auto auto
     justify-content: center
+    @media screen and ( max-width: 1160px )
+        width: unset
+        max-width: 1080px
+        grid-template-columns: auto auto auto
+        justify-content: center
+    @media screen and ( max-width: 875px )
+        grid-template-columns: auto auto
+    @media screen and ( max-width: 875px )
+        grid-template-columns: auto
+        row-gap: 3.429vw
     *
         font-family: 'Catamaran', sans-serif
     .genreMovieCardWrapper
@@ -15,6 +25,8 @@
         flex-direction: column
         position: relative
         max-height: 485px
+        @media screen and ( max-width: 875px )
+            width: 68.571vw
     span
         background-color: #F1B722
         width: 40px
@@ -42,6 +54,9 @@
         border-radius: 5px
         position: relative
         cursor: pointer
+        @media screen and ( max-width: 875px )
+            width: 100%
+            height: 41.714vw
         .loaderWrapper
             position: absolute
             height: 100%
@@ -75,6 +90,9 @@
             font-size: 20px
             line-height: 28px
             cursor: pointer
+            @media screen and ( max-width: 400px )
+                font-size: 5.286vw
+                line-height: 7.2vw
         .cardWrapperTitle:hover
             text-decoration: underline
         .genreWrapper

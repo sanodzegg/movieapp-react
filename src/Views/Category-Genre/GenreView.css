@@ -4,7 +4,7 @@
 .genreView .genreView-Col {
   width: 80%;
 }
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1445px) {
   .genreView .genreView-Col {
     width: 100%;
   }
@@ -12,7 +12,7 @@
 .genreView .genreView-Col.aside {
   width: 20% !important;
 }
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1445px) {
   .genreView .genreView-Col.aside {
     display: none;
   }

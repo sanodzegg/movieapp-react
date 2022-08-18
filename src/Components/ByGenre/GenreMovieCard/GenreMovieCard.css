@@ -8,6 +8,25 @@
   grid-template-columns: auto auto auto auto;
   justify-content: center;
 }
+@media screen and (max-width: 1160px) {
+  .genreMovieWrapper {
+    width: unset;
+    max-width: 1080px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 875px) {
+  .genreMovieWrapper {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 875px) {
+  .genreMovieWrapper {
+    grid-template-columns: auto;
+    row-gap: 3.429vw;
+  }
+}
 .genreMovieWrapper * {
   font-family: "Catamaran", sans-serif;
 }
@@ -18,6 +37,11 @@
   flex-direction: column;
   position: relative;
   max-height: 485px;
+}
+@media screen and (max-width: 875px) {
+  .genreMovieWrapper .genreMovieCardWrapper {
+    width: 68.571vw;
+  }
 }
 .genreMovieWrapper span {
   background-color: #F1B722;
@@ -44,6 +68,12 @@
   border-radius: 5px;
   position: relative;
   cursor: pointer;
+}
+@media screen and (max-width: 875px) {
+  .genreMovieWrapper .movieCardIMGWrapper {
+    width: 100%;
+    height: 41.714vw;
+  }
 }
 .genreMovieWrapper .movieCardIMGWrapper .loaderWrapper {
   position: absolute;
@@ -83,6 +113,12 @@
   font-size: 20px;
   line-height: 28px;
   cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  .genreMovieWrapper .cardWrapperInfo .cardWrapperTitle {
+    font-size: 5.286vw;
+    line-height: 7.2vw;
+  }
 }
 .genreMovieWrapper .cardWrapperInfo .cardWrapperTitle:hover {
   text-decoration: underline;
